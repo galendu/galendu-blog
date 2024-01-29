@@ -1,1 +1,18 @@
 # galendu-blog
+
+## 初始化  
+>参考: https://razeen.me/posts/use-github-action-to-deploy-your-hexo-blog/
+
+```bash
+npm config set registry https://registry.npmmirror.com
+#npm --registry=https://registry.npmmirror.com install -g hexo-cli
+npm  install -g hexo-cli
+hexo init galendu-blog
+cd galendu-blog
+npm install hexo-theme-next
+npm install hexo-deployer-git --save
+# 配置theme为next
+hexo clean && hexo g && hexo s
+hexo d -g
+# ssh-keygen -f github-deploy-keyapt
+```
