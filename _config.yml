@@ -102,4 +102,5 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: https://github.com/galendu/galendu.github.io.git
+  # repo: https://github.com/galendu/galendu.github.io.git
+  repo: git@github.com:galendu/galendu.github.io.git
