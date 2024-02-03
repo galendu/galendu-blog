@@ -6,3 +6,5 @@ tags:
 
 ### git更新代码  
 `git add . && git commit -m "xxx" && git push` 
+
+### hexo操作命令  
