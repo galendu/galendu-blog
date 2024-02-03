@@ -27,7 +27,7 @@ jobs:
       run: |
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
-        npm install
+        # npm install
     
     # 设置 Hexo 部署的私钥
     - name: Setup Deploy Private Key
