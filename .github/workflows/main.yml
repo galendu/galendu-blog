@@ -25,7 +25,6 @@ jobs:
     # 安装 Hexo 的依赖库
     - name: Setup Hexo Dependencies
       run: |
-        npm config set registry http://registry.npmjs.org/
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
         npm install
