@@ -29,7 +29,7 @@ jobs:
         npm install hexo-deployer-git --save
         #next主题优化依赖
         npm install hexo-neat --save
-        npm install hexo-image-minifier --save
+        # npm install hexo-image-minifier --save
         npm install hexo-seo-autopush --save
         npm install hexo-pwa --save
         npm install hexo-generator-sitemap hexo-generator-feed --save
