@@ -103,7 +103,7 @@ menu:
   archives: /archives/ || fa fa-archive
   schedule: /schedule/ || fa fa-calendar
   sitemap: /sitemap.xml || fa fa-sitemap
-  commonweal: /404/ || fa fa-heartbeat
+  # commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -270,7 +270,7 @@ reward_settings:
   # If true, a donate button will be displayed in every article by default.
   enable: true
   animation: false
-  comment: Buy me a coffee
+  comment: 喜欢这篇文章？打赏一下作者吧
 
 
 reward:
