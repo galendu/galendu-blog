@@ -59,4 +59,5 @@ jobs:
     - name: Deploy static files to galendu.github.io
       run: |
         cp googleee2c90ec88ce191f.html public/
+        cp BingSiteAuth.xml public/
         hexo d
