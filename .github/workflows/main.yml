@@ -33,6 +33,7 @@ jobs:
         npm install hexo-seo-autopush --save
         # npm install hexo-pwa --save
         npm install hexo-generator-sitemap hexo-generator-feed --save
+        npm install hexo-generator-searchdb
         npm install
     
     # 设置 Hexo 部署的私钥

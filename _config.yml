@@ -126,3 +126,9 @@ neat_js:
     - '**/*.min.js'
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
