@@ -27,6 +27,14 @@ jobs:
       run: |
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
+        #next主题优化依赖
+        npm install hexo-neat --save
+        npm install hexo-image-minifier --save
+        npm install hexo-seo-autopush --save
+        npm install hexo-pwa --save
+        npm install hexo-generator-sitemap hexo-generator-feed --save
+
+
         npm install
     
     # 设置 Hexo 部署的私钥
@@ -47,6 +55,7 @@ jobs:
     # 生成静态文件
     - name: Generate static files 
       run: |
+        cp googleee2c90ec88ce191f.html .deploy_git/
         hexo clean
         hexo g
     # 部署静态文件到 galendu.github.io

@@ -72,6 +72,11 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
+any-promise@^1.1.0:
+  version "1.3.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/any-promise/-/any-promise-1.3.0.tgz"
+  integrity sha1-q8av7tzqUugJzcA3au0845Y10X8=
+
 anymatch@~3.1.2:
   version "3.1.3"
   resolved "https://mirrors.cloud.tencent.com/npm/anymatch/-/anymatch-3.1.3.tgz"
@@ -154,6 +159,14 @@ bytes@3.0.0:
   resolved "https://mirrors.cloud.tencent.com/npm/bytes/-/bytes-3.0.0.tgz"
   integrity sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg=
 
+camel-case@^3.0.0:
+  version "3.0.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/camel-case/-/camel-case-3.0.0.tgz"
+  integrity sha1-yjw2iKTpzzpM2nd9xNy8cTJJz3M=
+  dependencies:
+    no-case "^2.2.0"
+    upper-case "^1.1.1"
+
 camel-case@^4.0.0, camel-case@^4.1.2:
   version "4.1.2"
   resolved "https://mirrors.cloud.tencent.com/npm/camel-case/-/camel-case-4.1.2.tgz"
@@ -185,6 +198,13 @@ chokidar@^3.3.0, chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+clean-css@^4.2.1, clean-css@^4.2.3:
+  version "4.2.4"
+  resolved "https://mirrors.cloud.tencent.com/npm/clean-css/-/clean-css-4.2.4.tgz"
+  integrity sha512-EJUDT7nDVFDvaQgAo2G/PJvxmp1o/c6iXLbswsBbUFXi1Nr+AjA2cKmfbKDMjMvzEe75g3P6JkaDDAKk96A85A==
+  dependencies:
+    source-map "~0.6.0"
+
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "https://mirrors.cloud.tencent.com/npm/color-convert/-/color-convert-2.0.1.tgz"
@@ -208,6 +228,11 @@ command-exists@^1.2.9:
   version "1.2.9"
   resolved "https://mirrors.cloud.tencent.com/npm/command-exists/-/command-exists-1.2.9.tgz"
   integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
+
+commander@^2.19.0:
+  version "2.20.3"
+  resolved "https://mirrors.cloud.tencent.com/npm/commander/-/commander-2.20.3.tgz"
+  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
 commander@^5.1.0:
   version "5.1.0"
@@ -567,6 +592,11 @@ hasown@^2.0.0:
   dependencies:
     function-bind "^1.1.2"
 
+he@^1.2.0:
+  version "1.2.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/he/-/he-1.2.0.tgz"
+  integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
 hexo-cli@^4.3.0:
   version "4.3.1"
   resolved "https://mirrors.cloud.tencent.com/npm/hexo-cli/-/hexo-cli-4.3.1.tgz"
@@ -653,6 +683,19 @@ hexo-log@^4.0.1:
   integrity sha512-i2Sgxk8Cgx5viSjq5qW5N/rBFfwoCKQcH8qnnW1fawCapcdEAhIsq+Y3vbrs9bssyDlyU6Vqm4oQmosREaNI7Q==
   dependencies:
     picocolors "^1.0.0"
+
+hexo-neat@^1.0.9:
+  version "1.0.9"
+  resolved "https://mirrors.cloud.tencent.com/npm/hexo-neat/-/hexo-neat-1.0.9.tgz"
+  integrity sha512-LhurM9XWoEGmoqXAsp24a/ZbYm/dw/+E2QadoWogwS72Dic7sA2jjQ7B0POv4w1d9v1e8vqo0PyT/739zKoaSA==
+  dependencies:
+    bluebird "^3.7.2"
+    clean-css "^4.2.3"
+    html-minifier "^4.0.0"
+    minimatch "^3.0.4"
+    object-assign "^4.1.1"
+    stream-to-array "^2.3.0"
+    uglify-js "~3.10.0"
 
 hexo-pagination@3.0.0:
   version "3.0.0"
@@ -789,6 +832,19 @@ html-encoding-sniffer@^3.0.0:
   integrity sha512-oWv4T4yJ52iKrufjnyZPkrN0CH3QnrUqdB6In1g5Fe1mia8GmF36gnfNySxoZtxD5+NmYw1EElVXiBk93UeskA==
   dependencies:
     whatwg-encoding "^2.0.0"
+
+html-minifier@^4.0.0:
+  version "4.0.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/html-minifier/-/html-minifier-4.0.0.tgz"
+  integrity sha512-aoGxanpFPLg7MkIl/DDFYtb0iWz7jMFGqFhvEDZga6/4QTjneiD8I/NXL1x5aaoCp7FSIT6h/OhykDdPsbtMig==
+  dependencies:
+    camel-case "^3.0.0"
+    clean-css "^4.2.1"
+    commander "^2.19.0"
+    he "^1.2.0"
+    param-case "^2.1.1"
+    relateurl "^0.2.7"
+    uglify-js "^3.5.1"
 
 htmlparser2@^7.0.0:
   version "7.2.0"
@@ -977,6 +1033,11 @@ jsonparse@^1.3.1:
   resolved "https://mirrors.cloud.tencent.com/npm/jsonparse/-/jsonparse-1.3.1.tgz"
   integrity sha1-P02uSpH6wxX3EGL4UhzCOfE2YoA=
 
+lower-case@^1.1.1:
+  version "1.1.4"
+  resolved "https://mirrors.cloud.tencent.com/npm/lower-case/-/lower-case-1.1.4.tgz"
+  integrity sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
+
 lower-case@^2.0.2:
   version "2.0.2"
   resolved "https://mirrors.cloud.tencent.com/npm/lower-case/-/lower-case-2.0.2.tgz"
@@ -1034,7 +1095,7 @@ min-indent@^1.0.0:
   resolved "https://mirrors.cloud.tencent.com/npm/min-indent/-/min-indent-1.0.1.tgz"
   integrity sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
 
-minimatch@^3.1.1, minimatch@^3.1.2:
+minimatch@^3.0.4, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://mirrors.cloud.tencent.com/npm/minimatch/-/minimatch-3.1.2.tgz"
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
@@ -1109,6 +1170,13 @@ nib@^1.2.0:
   resolved "https://mirrors.cloud.tencent.com/npm/nib/-/nib-1.2.0.tgz"
   integrity sha512-7HgrnMl/3yOmWykueO8/D0q+0iWwe7Z+CK2Eaq/xQV8w1hK80WN1oReRQkfkrztbAAnp/nTHkUSl5EcVkor6JQ==
 
+no-case@^2.2.0:
+  version "2.3.2"
+  resolved "https://mirrors.cloud.tencent.com/npm/no-case/-/no-case-2.3.2.tgz"
+  integrity sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==
+  dependencies:
+    lower-case "^1.1.1"
+
 no-case@^3.0.4:
   version "3.0.4"
   resolved "https://mirrors.cloud.tencent.com/npm/no-case/-/no-case-3.0.4.tgz"
@@ -1135,6 +1203,11 @@ nwsapi@^2.2.2:
   version "2.2.7"
   resolved "https://mirrors.cloud.tencent.com/npm/nwsapi/-/nwsapi-2.2.7.tgz"
   integrity sha512-ub5E4+FBPKwAZx0UwIQOjYWGHTEq5sPqHQNRN8Z9e4A7u3Tj1weLJsL59yH9vmvqEtBHaOmT6cYQKIZOxp35FQ==
+
+object-assign@^4.1.1:
+  version "4.1.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/object-assign/-/object-assign-4.1.1.tgz"
+  integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
 
 on-finished@~2.3.0:
   version "2.3.0"
@@ -1170,6 +1243,13 @@ open@^8.0.9:
     define-lazy-prop "^2.0.0"
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
+
+param-case@^2.1.1:
+  version "2.1.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/param-case/-/param-case-2.1.1.tgz"
+  integrity sha1-35T9jPZTHs915r75oIWPvHK+Ikc=
+  dependencies:
+    no-case "^2.2.0"
 
 parse5@^7.1.1:
   version "7.1.2"
@@ -1261,6 +1341,11 @@ readdirp@~3.6.0:
   integrity sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==
   dependencies:
     picomatch "^2.2.1"
+
+relateurl@^0.2.7:
+  version "0.2.7"
+  resolved "https://mirrors.cloud.tencent.com/npm/relateurl/-/relateurl-0.2.7.tgz"
+  integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
 requires-port@^1.0.0:
   version "1.0.0"
@@ -1359,6 +1444,11 @@ source-map@^0.7.3:
   resolved "https://mirrors.cloud.tencent.com/npm/source-map/-/source-map-0.7.4.tgz"
   integrity sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==
 
+source-map@~0.6.0:
+  version "0.6.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/source-map/-/source-map-0.6.1.tgz"
+  integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+
 source-map@~0.6.1:
   version "0.6.1"
   resolved "https://mirrors.cloud.tencent.com/npm/source-map/-/source-map-0.6.1.tgz"
@@ -1378,6 +1468,13 @@ statuses@2.0.1:
   version "2.0.1"
   resolved "https://mirrors.cloud.tencent.com/npm/statuses/-/statuses-2.0.1.tgz"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
+
+stream-to-array@^2.3.0:
+  version "2.3.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/stream-to-array/-/stream-to-array-2.3.0.tgz"
+  integrity sha1-u/azn19D7DC8cbq8s3VXrOzzQ1M=
+  dependencies:
+    any-promise "^1.1.0"
 
 string_decoder@^1.1.1:
   version "1.3.0"
@@ -1484,6 +1581,11 @@ tslib@^2.0.3:
   resolved "https://mirrors.cloud.tencent.com/npm/tslib/-/tslib-2.6.2.tgz"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
 
+uglify-js@^3.5.1, uglify-js@~3.10.0:
+  version "3.10.4"
+  resolved "https://mirrors.cloud.tencent.com/npm/uglify-js/-/uglify-js-3.10.4.tgz"
+  integrity sha512-kBFT3U4Dcj4/pJ52vfjCSfyLyvG9VYYuGYPmrPvAxRw/i7xHiT4VvCev+uiEMcEEiu6UNB6KgWmGtSUYIWScbw==
+
 universalify@^0.2.0:
   version "0.2.0"
   resolved "https://mirrors.cloud.tencent.com/npm/universalify/-/universalify-0.2.0.tgz"
@@ -1493,6 +1595,11 @@ unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://mirrors.cloud.tencent.com/npm/unpipe/-/unpipe-1.0.0.tgz"
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
+
+upper-case@^1.1.1:
+  version "1.1.3"
+  resolved "https://mirrors.cloud.tencent.com/npm/upper-case/-/upper-case-1.1.3.tgz"
+  integrity sha1-9rRQHC7EzdJrp4vnIilh3ndiFZg=
 
 url-parse@^1.5.3:
   version "1.5.10"
