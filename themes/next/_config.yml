@@ -697,7 +697,8 @@ disqusjs:
   # For example:
   # api: https://disqus.skk.moe/disqus/
   api: https://disqus.skk.moe/disqus/
-  apikey: jlpjRILNVYd3kh1fCtTuYb32gQhYa2mcZ5pEg2V31MeembR42rzF0Hj8JvRXqgtS
+  apikey: hlItsqgzI6njJfgpBuoWap35UlReFQBSchAHDXZkAlR4wqwFVLmIwfSgdEtGQeCx
+
  # Register new application from https://disqus.com/api/applications/
   shortname: galendu # See: https://disqus.com/admin/settings/general/
 
