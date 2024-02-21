@@ -60,6 +60,6 @@ jobs:
     # 部署静态文件到 galendu.github.io
     - name: Deploy static files to galendu.github.io
       run: |
-        hexo -g
+        hexo g
         cp googleee2c90ec88ce191f.html .deploy_git/
         hexo d
