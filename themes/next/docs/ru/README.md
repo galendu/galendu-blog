@@ -174,7 +174,7 @@ Also, we welcome Issue or PR to our [official-plugins][official-plugins-url].
 [docs-upgrade-url]: https://theme-next.js.org/docs/getting-started/upgrade.html
 
 [awesome-next-url]: https://github.com/next-theme/awesome-next
-[discussions-url]: https://github.com/next-theme/hexo-theme-next/discussions
+[s-url]: https://github.com/next-theme/hexo-theme-next/discussions
 [gitter-url]: https://app.gitter.im/#/room/#next:gitter.im
 [i18n-url]: https://crowdin.com/project/hexo-theme-next
 
