@@ -5,7 +5,9 @@ tags: hexo
 ---
 ## git 
 ### git更新代码  
-`git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push`  
+```bash
+git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
+```
 
 ## hexo
 ### hexo操作命令  
