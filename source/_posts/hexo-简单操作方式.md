@@ -1,11 +1,11 @@
 ---
 title: hexo 简单操作方式
 date: 2024-01-29 13:41:24
-tags:
+tags: hexo
 ---
 ## git 
 ### git更新代码  
-`git add . && git commit -m "xxx" && git push` 
+`git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push`  
 
 ## hexo
 ### hexo操作命令  
@@ -22,14 +22,7 @@ tags:
      ```
    - 在博客的 `_config.yml` 中配置该插件。
 
-2. **图片优化**
-   - 安装图片压缩插件：
-     ```bash
-     npm install hexo-image-minifier --save
-     ```
-   - 修改 `_config.yml` 配置以启用图像压缩。
-
-3. **SEO优化**
+2. **SEO优化**
    - 安装 SEO 插件：
      ```bash
      npm install hexo-seo-autopush --save
