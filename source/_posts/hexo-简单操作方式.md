@@ -1,7 +1,8 @@
 ---
 title: hexo 简单操作方式
-date: 2024-01-29 13:41:24
 tags: hexo
+abbrlink: 5592
+date: 2024-01-29 13:41:24
 ---
 ## git 
 ### git更新代码  
