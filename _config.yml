@@ -6,7 +6,7 @@
 title: Galen Du
 subtitle: ''
 description: ''
-keywords:
+keywords: BlockChain,Distributed Database,Pervasive computing,Technical Debt,Security Certificate,Cryptographic protocols,Human-Computer Interaction
 author: Galen Du
 language: zh-CN
 timezone: ''
@@ -16,6 +16,7 @@ timezone: ''
 url: https://galendu.github.io
 # permalink: :year/:month/:day/:title/
 permalink: :title/
+# permalink: :title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

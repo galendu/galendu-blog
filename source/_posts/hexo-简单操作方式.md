@@ -3,6 +3,7 @@ title: hexo 简单操作方式
 tags: hexo
 abbrlink: 5592
 date: 2024-01-29 13:41:24
+keywords: hexo,git,github
 ---
 ## git 
 ### git更新代码  
