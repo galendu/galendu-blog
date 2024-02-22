@@ -97,6 +97,5 @@ git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 
 ### 具体操作：
 
-请参考每个插件和 Next 主题提供的文档进行配置。设置都在博客根目录下的 `_config.yml` 以及 Next 主题的 `_config.yml` 中完成。
-
+请参考每个插件和 Next 主题提供的文档进行配置。设置都在博客根目录下的 `_config.yml` 以及 Next 主题的 `_config.yml` 中完成。 
 <!--more-->
