@@ -59,6 +59,6 @@ jobs:
     # 部署静态文件到 galendu.github.io
     - name: Deploy static files to galendu.github.io
       run: |
-        # cp googleee2c90ec88ce191f.html public/
+        cp googleee2c90ec88ce191f.html public/
         cp BingSiteAuth.xml public/
         hexo d
