@@ -132,6 +132,11 @@ bluebird@^3.5.2, bluebird@^3.5.5, bluebird@^3.7.2:
   resolved "https://mirrors.cloud.tencent.com/npm/bluebird/-/bluebird-3.7.2.tgz"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
+boolbase@^1.0.0:
+  version "1.0.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/boolbase/-/boolbase-1.0.0.tgz"
+  integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://mirrors.cloud.tencent.com/npm/brace-expansion/-/brace-expansion-1.1.11.tgz"
@@ -283,6 +288,22 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+css-select@^4.0.0:
+  version "4.3.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/css-select/-/css-select-4.3.0.tgz"
+  integrity sha512-wPpOYtnsVontu2mODhA19JrqWxNsfdatRKd64kmpRbQgh1KtItko5sTnEpPdpSaJszTOhEMlF/RPz28qj4HqhQ==
+  dependencies:
+    boolbase "^1.0.0"
+    css-what "^6.0.1"
+    domhandler "^4.3.1"
+    domutils "^2.8.0"
+    nth-check "^2.0.1"
+
+css-what@^6.0.1:
+  version "6.1.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/css-what/-/css-what-6.1.0.tgz"
+  integrity sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==
+
 cssom@^0.5.0:
   version "0.5.0"
   resolved "https://mirrors.cloud.tencent.com/npm/cssom/-/cssom-0.5.0.tgz"
@@ -365,7 +386,7 @@ destroy@1.2.0:
   resolved "https://mirrors.cloud.tencent.com/npm/destroy/-/destroy-1.2.0.tgz"
   integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
 
-dom-serializer@^1.0.1:
+dom-serializer@^1.0.1, dom-serializer@^1.3.1:
   version "1.4.1"
   resolved "https://mirrors.cloud.tencent.com/npm/dom-serializer/-/dom-serializer-1.4.1.tgz"
   integrity sha512-VHwB3KfrcOOkelEG2ZOfxqLZdfkil8PtJi4P8N2MMXucZq2yLp75ClViUlOVwyoHEDjYU433Aq+5zWP61+RGag==
@@ -395,7 +416,7 @@ domexception@^4.0.0:
   dependencies:
     webidl-conversions "^7.0.0"
 
-domhandler@^4.2.0, domhandler@^4.2.2:
+domhandler@^4.0.0, domhandler@^4.2.0, domhandler@^4.2.2, domhandler@^4.3.1:
   version "4.3.1"
   resolved "https://mirrors.cloud.tencent.com/npm/domhandler/-/domhandler-4.3.1.tgz"
   integrity sha512-GrwoxYN+uWlzO8uhUXRl0P+kHE4GtVPfYzVLcUxPL7KNdHKj66vvlhiweIHqYYXWlw+T8iLMp42Lm67ghw4WMQ==
@@ -414,7 +435,7 @@ dompurify@^3.0.3:
   resolved "https://mirrors.cloud.tencent.com/npm/dompurify/-/dompurify-3.0.8.tgz"
   integrity sha512-b7uwreMYL2eZhrSCRC4ahLTeZcPZxSmYfmcQGXGkXiZSNW1X85v+SDM5KsWcpivIiUBH47Ji7NtyUdpLeF5JZQ==
 
-domutils@^2.8.0:
+domutils@^2.5.2, domutils@^2.8.0:
   version "2.8.0"
   resolved "https://mirrors.cloud.tencent.com/npm/domutils/-/domutils-2.8.0.tgz"
   integrity sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==
@@ -624,6 +645,17 @@ hexo-deployer-git@^4.0.0:
     luxon "^3.0.4"
     nunjucks "^3.2.3"
     picocolors "^1.0.0"
+
+hexo-excerpt@^1.3.0:
+  version "1.3.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/hexo-excerpt/-/hexo-excerpt-1.3.0.tgz"
+  integrity sha512-qxisthOB3vE7Xcf6R+tDWHi00inN6NqG+9luWFohNaJX0BAqyw3q3PjSsHF3akey3+W2OxnGEHlhnzFsz6P+rw==
+  dependencies:
+    css-select "^4.0.0"
+    dom-serializer "^1.3.1"
+    domutils "^2.5.2"
+    htmlparser2 "^6.1.0"
+    lodash.defaults "^4.2.0"
 
 hexo-front-matter@^4.2.1:
   version "4.2.1"
@@ -870,6 +902,16 @@ html-minifier@^4.0.0:
     relateurl "^0.2.7"
     uglify-js "^3.5.1"
 
+htmlparser2@^6.1.0:
+  version "6.1.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/htmlparser2/-/htmlparser2-6.1.0.tgz"
+  integrity sha512-gyyPk6rgonLFEDGoeRgQNaEUvdJ4ktTmmUh/h2t7s+M8oPpIPxgNACWa+6ESR57kXstwqPiCut0V8NRpcwgU7A==
+  dependencies:
+    domelementtype "^2.0.1"
+    domhandler "^4.0.0"
+    domutils "^2.5.2"
+    entities "^2.0.0"
+
 htmlparser2@^7.0.0:
   version "7.2.0"
   resolved "https://mirrors.cloud.tencent.com/npm/htmlparser2/-/htmlparser2-7.2.0.tgz"
@@ -1057,6 +1099,11 @@ jsonparse@^1.3.1:
   resolved "https://mirrors.cloud.tencent.com/npm/jsonparse/-/jsonparse-1.3.1.tgz"
   integrity sha1-P02uSpH6wxX3EGL4UhzCOfE2YoA=
 
+lodash.defaults@^4.2.0:
+  version "4.2.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/lodash.defaults/-/lodash.defaults-4.2.0.tgz"
+  integrity sha1-0JF4cW/+pN3p5ft7N/bwgCJ0WAw=
+
 lower-case@^1.1.1:
   version "1.1.4"
   resolved "https://mirrors.cloud.tencent.com/npm/lower-case/-/lower-case-1.1.4.tgz"
@@ -1213,6 +1260,13 @@ normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://mirrors.cloud.tencent.com/npm/normalize-path/-/normalize-path-3.0.0.tgz"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+nth-check@^2.0.1:
+  version "2.1.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/nth-check/-/nth-check-2.1.1.tgz"
+  integrity sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==
+  dependencies:
+    boolbase "^1.0.0"
 
 nunjucks@^3.0.0, nunjucks@^3.1.6, nunjucks@^3.2.2, nunjucks@^3.2.3:
   version "3.2.4"

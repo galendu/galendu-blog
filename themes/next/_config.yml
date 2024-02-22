@@ -240,11 +240,22 @@ footer:
 # ---------------------------------------------------------------
 
 # Use `description` in front-matter to specify post excerpt.
-excerpt_description: true
+# excerpt_description: true
 
-# Read more button
-# If true, the read more button will be displayed in excerpt section.
-read_more_btn: true
+
+# # Read more button
+# # If true, the read more button will be displayed in excerpt section.
+# read_more_btn: true
+
+auto_excerpt:
+  enable: true
+  length: 10
+
+# excerpt:
+#   depth: 10
+#   excerpt_excludes: []
+#   more_excludes: []
+#   hideWholePostExcerpts: true
 
 # Post meta display settings
 post_meta:
