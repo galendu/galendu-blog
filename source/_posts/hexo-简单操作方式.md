@@ -3,14 +3,17 @@ title: hexo 简单操作方式
 tags: hexo
 abbrlink: 5592
 date: 2024-01-29 13:41:24
-keywords: hexo,git,github
+# description: hexo 简单操作方式
 ---
 ## git 
-### 将源码更新到github,并部署到个人博客  
+### 将源码更新到github,并部署到个人博客 
+
 ```bash
 git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 ```
-<!-- more -->  
+
+<!--more-->
+
 ## hexo
 ### hexo操作命令  
 - 创建新帖子或新页面`hexo new [layout] <title>` post是默认的layout,可以通过编辑_config.yaml中的default_layout修改  
