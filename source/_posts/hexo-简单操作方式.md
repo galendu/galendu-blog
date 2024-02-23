@@ -5,8 +5,8 @@ abbrlink: 5592
 date: 2024-01-29 13:41:24
 # description: hexo 简单操作方式
 ---
-## git 
-### 将源码更新到github,并部署到个人博客 
+## git  
+### 将源码更新到github,并部署到个人博客  
 
 ```bash
 git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
@@ -14,9 +14,10 @@ git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 
 <!--more-->
 
-## hexo
+## hexo  
+
 ### hexo操作命令  
-- 创建新帖子或新页面`hexo new [layout] <title>` post是默认的layout,可以通过编辑_config.yaml中的default_layout修改  
+- 创建新帖子或新页面`hexo new [layout] [title]` post是默认的layout,可以通过编辑_config.yaml中的default_layout修改  
 - 本地启动部署`hexo clean && hexo g && hexo s`  
 - 远程部署更新`hexo d -g`  
 - 通过git上传到github,并自动更新到站点(通过github action实现)`git add . && git commit -m "xxx" && git push`  
