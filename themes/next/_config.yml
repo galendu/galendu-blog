@@ -240,17 +240,12 @@ footer:
 # ---------------------------------------------------------------
 
 ## excerpt_length: 350
-# Use `description` in front-matter to specify post excerpt.
-excerpt_description: true
-
-
-# # Read more button
-# # If true, the read more button will be displayed in excerpt section.
 # read_more_btn: true
+# excerpt_length: 300
 
-# auto_excerpt:
-#   enable: true
-#   length: 10
+auto_excerpt:
+  enable: true
+  length: 150
 
 # excerpt:
 #   depth: 10

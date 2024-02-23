@@ -10,7 +10,7 @@ keywords: hexo,git,github
 ```bash
 git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 ```
-
+<!-- more -->  
 ## hexo
 ### hexo操作命令  
 - 创建新帖子或新页面`hexo new [layout] <title>` post是默认的layout,可以通过编辑_config.yaml中的default_layout修改  
