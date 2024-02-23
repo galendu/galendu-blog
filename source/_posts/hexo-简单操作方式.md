@@ -54,19 +54,16 @@ git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
      ```
      
 
-4. **启用 CDN**
-   - 注册 CDN 服务（如 Cloudflare）。
-   - 更新 DNS 设置以使用 CDN 服务。
+4. **修改 CDN**
+   ```bash
+   vendors:
+     internal: local
+     plugins: custom
+     custom_cdn_url: https://lib.baomitu.com/${cdnjs_name}/${version}/${cdnjs_file}
+   ```
 
-5. **配置PWA**
-   - 安装 PWA 支持插件：
-     ```bash
-     npm install hexo-pwa --save
-     ```
-   - 配置 `_config.yml` 来启用 PWA 功能。
-
-6. **开启代码高亮**
-   - Next 主题自带代码高亮，通过 `_config.yml` 中的 `highlight` 部分来配置。
+5. **开启代码高亮**
+   - Next 主题自带代码高亮，通过 `_config.yml` 中的 `highlight` 部分来配置。 
 
 ### 高级优化：
 

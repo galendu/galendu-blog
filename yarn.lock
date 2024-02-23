@@ -411,6 +411,19 @@ dom-serializer@^2.0.0:
     domhandler "^5.0.2"
     entities "^4.2.0"
 
+dom-serializer@0:
+  version "0.2.2"
+  resolved "https://mirrors.cloud.tencent.com/npm/dom-serializer/-/dom-serializer-0.2.2.tgz"
+  integrity sha512-2/xPb3ORsQ42nHYiSunXkDjPLBaEj/xTwUO4B7XCZQTRk7EBtTOPaygh10YAAh2OI1Qrp6NWfpAhzswj0ydt9g==
+  dependencies:
+    domelementtype "^2.0.1"
+    entities "^2.0.0"
+
+domelementtype@^1.3.1, domelementtype@1:
+  version "1.3.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/domelementtype/-/domelementtype-1.3.1.tgz"
+  integrity sha512-BSKB+TSpMpFI/HOxCNr1O8aMOTZ8hT3pM3GQ0w/mWRmkhEDSFJkkyzz4XQsBV44BChwGkrDfMyjVD0eA2aFV3w==
+
 domelementtype@^2.0.1, domelementtype@^2.2.0, domelementtype@^2.3.0:
   version "2.3.0"
   resolved "https://mirrors.cloud.tencent.com/npm/domelementtype/-/domelementtype-2.3.0.tgz"
@@ -422,6 +435,13 @@ domexception@^4.0.0:
   integrity sha512-A2is4PLG+eeSfoTMA95/s4pvAoSo2mKtiM5jlHkAVewmiO8ISFTFKZjH7UAM1Atli/OT/7JHOrJRJiMKUZKYBw==
   dependencies:
     webidl-conversions "^7.0.0"
+
+domhandler@^2.3.0:
+  version "2.4.2"
+  resolved "https://mirrors.cloud.tencent.com/npm/domhandler/-/domhandler-2.4.2.tgz"
+  integrity sha512-JiK04h0Ht5u/80fdLMCEmV4zkNh2BcoMFBmZ/91WtYZ8qVXSKjiw7fXMgFPnHcSZgOo3XdinHvmnDUeMf5R4wA==
+  dependencies:
+    domelementtype "1"
 
 domhandler@^4.0.0, domhandler@^4.2.0, domhandler@^4.2.2, domhandler@^4.3.1:
   version "4.3.1"
@@ -441,6 +461,14 @@ dompurify@^3.0.3:
   version "3.0.8"
   resolved "https://mirrors.cloud.tencent.com/npm/dompurify/-/dompurify-3.0.8.tgz"
   integrity sha512-b7uwreMYL2eZhrSCRC4ahLTeZcPZxSmYfmcQGXGkXiZSNW1X85v+SDM5KsWcpivIiUBH47Ji7NtyUdpLeF5JZQ==
+
+domutils@^1.5.1:
+  version "1.7.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/domutils/-/domutils-1.7.0.tgz"
+  integrity sha512-Lgd2XcJ/NjEw+7tFvfKxOzCYKZsdct5lczQ2ZaQY8Djz7pfAD3Gbp8ySJWtreII/vDlMVmxwa6pHmdxIYgttDg==
+  dependencies:
+    dom-serializer "0"
+    domelementtype "1"
 
 domutils@^2.5.2, domutils@^2.8.0:
   version "2.8.0"
@@ -476,6 +504,11 @@ encodeurl@~1.0.2:
   version "1.0.2"
   resolved "https://mirrors.cloud.tencent.com/npm/encodeurl/-/encodeurl-1.0.2.tgz"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
+
+entities@^1.1.1:
+  version "1.1.2"
+  resolved "https://mirrors.cloud.tencent.com/npm/entities/-/entities-1.1.2.tgz"
+  integrity sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==
 
 entities@^2.0.0:
   version "2.2.0"
@@ -620,7 +653,7 @@ hasown@^2.0.0:
   dependencies:
     function-bind "^1.1.2"
 
-he@^1.2.0:
+he@^1.0.0, he@^1.2.0:
   version "1.2.0"
   resolved "https://mirrors.cloud.tencent.com/npm/he/-/he-1.2.0.tgz"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
@@ -632,6 +665,13 @@ hexo-abbrlink@^2.2.1:
   dependencies:
     hexo-front-matter "^1.0.0"
     hexo-fs "^3.1.0"
+
+hexo-auto-excerpt@^1.1.2:
+  version "1.1.2"
+  resolved "https://mirrors.cloud.tencent.com/npm/hexo-auto-excerpt/-/hexo-auto-excerpt-1.1.2.tgz"
+  integrity sha512-Gj6TJhp/Vk6XrE44CiDl3qjSZsp2J9T6lv70EjDGOoDmNNQRcdvP2B/zVoe8co7mJt8YwD6sPNppIxQc/8KCGQ==
+  dependencies:
+    html-to-text "^3.3.0"
 
 hexo-cli@^4.3.0:
   version "4.3.1"
@@ -934,6 +974,29 @@ html-minifier@^4.0.0:
     relateurl "^0.2.7"
     uglify-js "^3.5.1"
 
+html-to-text@^3.3.0:
+  version "3.3.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/html-to-text/-/html-to-text-3.3.0.tgz"
+  integrity sha1-aptjxpm4hbt7qEsURr/mh2u/z7c=
+  dependencies:
+    he "^1.0.0"
+    htmlparser2 "^3.9.2"
+    optimist "^0.6.1"
+    underscore "^1.8.3"
+    underscore.string "^3.2.3"
+
+htmlparser2@^3.9.2:
+  version "3.10.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/htmlparser2/-/htmlparser2-3.10.1.tgz"
+  integrity sha512-IgieNijUMbkDovyoKObU1DUhm1iwNYE/fuifEoEHfd1oZKZDaONBSkal7Y01shxsM49R4XaMdGez3WnF9UfiCQ==
+  dependencies:
+    domelementtype "^1.3.1"
+    domhandler "^2.3.0"
+    domutils "^1.5.1"
+    entities "^1.1.1"
+    inherits "^2.0.1"
+    readable-stream "^3.1.1"
+
 htmlparser2@^6.1.0:
   version "6.1.0"
   resolved "https://mirrors.cloud.tencent.com/npm/htmlparser2/-/htmlparser2-6.1.0.tgz"
@@ -1007,7 +1070,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@^2.0.3, inherits@2, inherits@2.0.4:
+inherits@^2.0.1, inherits@^2.0.3, inherits@2, inherits@2.0.4:
   version "2.0.4"
   resolved "https://mirrors.cloud.tencent.com/npm/inherits/-/inherits-2.0.4.tgz"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
@@ -1225,6 +1288,11 @@ minimist@^1.2.5:
   resolved "https://mirrors.cloud.tencent.com/npm/minimist/-/minimist-1.2.8.tgz"
   integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
+minimist@~0.0.1:
+  version "0.0.10"
+  resolved "https://mirrors.cloud.tencent.com/npm/minimist/-/minimist-0.0.10.tgz"
+  integrity sha1-3j+YVD2/lggr5IrRoMfNqDYwHc8=
+
 moize@^6.1.6:
   version "6.1.6"
   resolved "https://mirrors.cloud.tencent.com/npm/moize/-/moize-6.1.6.tgz"
@@ -1362,6 +1430,14 @@ open@^8.0.9:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
+optimist@^0.6.1:
+  version "0.6.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/optimist/-/optimist-0.6.1.tgz"
+  integrity sha1-2j6nRob6IaGaERwybpDrFaAZZoY=
+  dependencies:
+    minimist "~0.0.1"
+    wordwrap "~0.0.2"
+
 param-case@^2.1.1:
   version "2.1.1"
   resolved "https://mirrors.cloud.tencent.com/npm/param-case/-/param-case-2.1.1.tgz"
@@ -1444,7 +1520,7 @@ range-parser@~1.2.1:
   resolved "https://mirrors.cloud.tencent.com/npm/range-parser/-/range-parser-1.2.1.tgz"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
-readable-stream@3:
+readable-stream@^3.1.1, readable-stream@3:
   version "3.6.2"
   resolved "https://mirrors.cloud.tencent.com/npm/readable-stream/-/readable-stream-3.6.2.tgz"
   integrity sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==
@@ -1572,7 +1648,7 @@ source-map@~0.6.1:
   resolved "https://mirrors.cloud.tencent.com/npm/source-map/-/source-map-0.6.1.tgz"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-sprintf-js@^1.1.2:
+sprintf-js@^1.1.1, sprintf-js@^1.1.2:
   version "1.1.3"
   resolved "https://mirrors.cloud.tencent.com/npm/sprintf-js/-/sprintf-js-1.1.3.tgz"
   integrity sha512-Oo+0REFV59/rz3gfJNKQiBlwfHaSESl1pcGyABQsnnIfWOFt6JNj5gCog2U6MLZ//IGYD+nA8nI+mTShREReaA==
@@ -1709,6 +1785,19 @@ uglify-js@^3.5.1, uglify-js@~3.10.0:
   resolved "https://mirrors.cloud.tencent.com/npm/uglify-js/-/uglify-js-3.10.4.tgz"
   integrity sha512-kBFT3U4Dcj4/pJ52vfjCSfyLyvG9VYYuGYPmrPvAxRw/i7xHiT4VvCev+uiEMcEEiu6UNB6KgWmGtSUYIWScbw==
 
+underscore.string@^3.2.3:
+  version "3.3.6"
+  resolved "https://mirrors.cloud.tencent.com/npm/underscore.string/-/underscore.string-3.3.6.tgz"
+  integrity sha512-VoC83HWXmCrF6rgkyxS9GHv8W9Q5nhMKho+OadDJGzL2oDYbYEppBaCMH6pFlwLeqj2QS+hhkw2kpXkSdD1JxQ==
+  dependencies:
+    sprintf-js "^1.1.1"
+    util-deprecate "^1.0.2"
+
+underscore@^1.8.3:
+  version "1.13.6"
+  resolved "https://mirrors.cloud.tencent.com/npm/underscore/-/underscore-1.13.6.tgz"
+  integrity sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==
+
 universalify@^0.2.0:
   version "0.2.0"
   resolved "https://mirrors.cloud.tencent.com/npm/universalify/-/universalify-0.2.0.tgz"
@@ -1732,7 +1821,7 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
-util-deprecate@^1.0.1:
+util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://mirrors.cloud.tencent.com/npm/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
@@ -1799,6 +1888,11 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+wordwrap@~0.0.2:
+  version "0.0.3"
+  resolved "https://mirrors.cloud.tencent.com/npm/wordwrap/-/wordwrap-0.0.3.tgz"
+  integrity sha512-1tMA907+V4QmxV7dbRvb4/8MaRALK6q9Abid3ndMYnbyo8piisCmeONVqVSXqQA3KaP4SLt5b7ud6E2sqP8TFw==
 
 wrappy@1:
   version "1.0.2"
