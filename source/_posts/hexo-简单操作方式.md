@@ -6,7 +6,7 @@ date: 2024-01-29 13:41:24
 keywords: hexo,git,github
 ---
 ## git 
-### github更新代码  
+### 将源码更新到github,并部署到个人博客  
 ```bash
 git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 ```
