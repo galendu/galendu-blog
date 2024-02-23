@@ -239,19 +239,12 @@ footer:
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-## excerpt_length: 350
-# read_more_btn: true
-# excerpt_length: 300
+# Use `description` in front-matter to specify post excerpt.
+excerpt_description: true
 
-auto_excerpt:
-  enable: true
-  length: 150
-
-# excerpt:
-#   depth: 10
-#   excerpt_excludes: []
-#   more_excludes: []
-#   hideWholePostExcerpts: true
+# Read more button
+# If true, the read more button will be displayed in excerpt section.
+read_more_btn: true
 
 # Post meta display settings
 post_meta:
