@@ -59,7 +59,7 @@ git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
      
 
 4. **修改 CDN**
-   ```bash
+   ```yml
    vendors:
      internal: local
      plugins: custom
@@ -68,6 +68,39 @@ git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 
 5. **开启代码高亮**
    - Next 主题自带代码高亮，通过 `_config.yml` 中的 `highlight` 部分来配置。 
+
+6. **配置阅读全文按钮**
+   - 配置主题文件中的`_config.yml`文件 
+   ```yaml
+   excerpt_description: true
+   # Read more button
+   # If true, the read more button will be displayed in excerpt section.
+   read_more_btn: true
+   
+   #自动形成摘要
+   auto_excerpt:
+     enable: true
+     length: 100
+   ```
+   - 在博客中使用more进行摘要内容的截断标志.标志之后的内容不会在首页显示,而且会生成一个`阅读全文`的按钮(注意文档中不能有尖括号)  
+   ```md
+   ---
+   title: {{ title }}
+   date: {{ date }}
+   tags:
+   categories:
+   ---
+
+   ## 概述
+
+   > 本文。
+
+   <!--more-->
+
+   ## 正文
+   ```
+   
+   
 
 ### 高级优化：
 
