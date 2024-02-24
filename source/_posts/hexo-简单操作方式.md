@@ -99,7 +99,317 @@ git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 
    ## 正文
    ```
+7. **创建自定义样式文件** 
+   - 取消主题配置文件中的`style: source/_data/styles.styl`注释,在hexo根目录下的source目录创建_data目录,并将下面的内容写入到styles.styl文件中  
    
+   ```yml
+     // Custom styles.
+
+     // 网站最顶部条线的颜色
+     .headband {
+       height: 0px;
+       background: #F2F4EF;
+     }
+
+     // 设置背景图片
+     //body{
+     //    //background:url(/images/bg.png);
+     //    background-repeat:no-repeat;
+     //    background-attachment:fixed;
+     //    background-position:center;
+     //}
+
+     // 设置侧边栏左上角网站标题和副标题区颜色
+     .site-meta {
+     	background: #222222;
+     }
+
+     // 设置侧边栏网站标题样式
+     .site-title {
+     	color:#fff;
+     }
+
+
+
+     // 设置侧边栏网站标题鼠标悬浮样式
+     .site-title:hover {
+     	letter-spacing: 0.4rem;
+     }
+
+     // 侧边栏网站副标题样式
+     .site-subtitle {
+     	color:#fff;
+     }
+
+     .site-author-image{
+     border: 0px;
+     }
+
+     // 文章标题鼠标悬浮下划线样式
+     .posts-expand .post-title-link::before {
+         background: var(--link-color);
+         bottom: 0;
+         content: '';
+         height: 2px;
+         left: 0;
+         position: absolute;
+         transform: scaleX(0);
+         transition: transform .2s ease-in-out;
+         width: 100%
+     }
+
+     // 文章标题颜色
+     .posts-expand .post-title-link {
+     	//color:#DfA710;
+       color:#10df58;
+     }
+
+     // 阅读全文按钮样式
+     .btn {
+     	border:2px solid #DfA710;
+     	color:#DfA710;
+     }
+
+     // 阅读全文按钮鼠标悬浮样式
+     .btn:hover {
+       border-color: #DfA710;
+       color: #fff;
+       background: #DfA710;
+     }
+
+     // 设置文章和侧边栏中链接样式
+     a:hover,
+     span.exturl:hover {
+       color: #DfA710;
+       border-bottom-color: #DfA710;
+     }
+
+     // 修改文章页侧边栏文章目录下面的第一个标题的鼠标悬浮样式
+     // 真的有毒，文章目录第一个标题的样式还是单独设置的...一开始还没发现
+     .post-toc .nav .active-current > a:hover {
+         color: #DfA710;
+     }
+
+     // 文章页面左边文章标题颜色
+     .post-toc ol a:hover {
+       color: #DfA710;
+       border-bottom-color: #DfA710;
+     }
+
+     // 文章页面左边文章标题active时颜色
+     .post-toc .nav .active > a {
+       color: #DfA710;
+       border-bottom-color: #DfA710;
+     }
+
+     // 文章页侧边栏文章目录和站点概况鼠标悬浮样式
+     .sidebar-nav li:hover {
+       color: #DfA710;
+     }
+
+     // 文章页侧边栏文章目录和站点概况active时鼠标悬浮样式
+     .sidebar-nav .sidebar-nav-active:hover {
+       color: #DfA710;
+     }
+
+     // 文章页侧边栏文章目录和站点概况active时样式
+     .sidebar-nav .sidebar-nav-active {
+       color: #DfA710;
+       border-bottom-color: #DfA710;
+     }
+
+     // 社交栏鼠标悬浮样式
+     #sidebar div.links-of-author.motion-element a:hover {
+       color: #DfA710;
+       background: rgba(255, 255, 255, 0);
+     }
+
+     // 友链鼠标悬浮样式
+     .sidebar a:hover,
+     .sidebar span.exturl:hover {
+       border-bottom-color: #DfA710;
+       color: #DfA710;
+     }
+
+     // RSS文字颜色
+     //#sidebar div.feed-link.motion-element > a {
+     //  color: #DfA710;
+     //}
+
+     // RSS图标颜色
+     //#sidebar div.feed-link.motion-element > a i{
+     //  color: #DfA710;
+     //}
+
+     // 侧边栏日志、分类、标签 上面的数字的颜色
+     .site-state-item-count {
+       color: #DfA710;
+     }
+
+     // 设置底部文章分页数字鼠标悬浮上划线颜色
+     .pagination .prev:hover,
+     .pagination .next:hover,
+     .pagination .page-number:hover {
+       border-top-color: #DfA710;
+     }
+
+     // 设置文章页上一篇文章和下一篇文章鼠标悬浮样式
+     .post-nav-item a:hover {
+       color: #DfA710;
+       border-bottom: none;
+     }
+
+     // 修改鼠标选中字符的颜色
+     /* webkit, opera, IE9 */
+     ::selection {
+         background: #DfA710;
+         color: #f7f7f7;
+     }
+     /* firefox */
+     ::-moz-selection {
+         background: #DfA710;
+         color: #f7f7f7;
+     }
+
+     // 侧边栏返回顶部按钮鼠标悬浮样式
+     .back-to-top:hover {
+       background: #eee;
+       color: #DfA710;
+     }
+
+     // 当页面处于 首页、标签、分类、归档、关于页面其中之一时，处于哪个页面哪个选项就变蓝
+     #menu > li.menu-item-active > a {
+       color: #DfA710;
+     }
+
+     // 侧边栏导航小圆点颜色
+     .menu-item-active a:after,
+     .menu .menu-item a:hover:after,
+     .menu .menu-item span.exturl:hover:after {
+       background-color: #DfA710;
+     }
+
+     // 侧边栏上半部分设置为透明
+     .menu-item-active a,
+     .menu .menu-item a:hover,
+     .menu .menu-item span.exturl:hover {
+       background: rgba(242, 242, 242, 0.30);
+       border-bottom-color: rgba(255, 255, 255, 0.2);;
+     }
+
+     // 侧边栏下半部分设置为透明
+     .sidebar{
+     	background: rgba(255, 255, 255, 0.0);
+     }
+     .sidebar-inner{
+     	background: rgba(255, 255, 255, 0.2);
+     }
+
+     // 设置底部文章分页部分为透明
+     .pagination{
+     	background: rgba(255, 255, 255, 0.0);
+     }
+     .pagination .page-number.current {
+       color: #fff;
+       background: #DfA710;
+     }
+
+     // 导航栏底部百分比透明
+     .back-to-top,
+     .back-to-top:hover
+     {
+     	background: rgba(255, 255, 255, 0.3);
+     }
+
+     // 设置文章背景透明度
+     .post-block{
+     	background: rgba(255, 255, 255, 0.2);
+     }
+
+     // 这里需要完全透明，不然就会在上面的0.2基础上再进行透明度计算
+     .btn{
+     	background: rgba(255, 255, 255, 0);
+     }
+
+     .header-inner{
+     	background: rgba(255, 255, 255, 0.2);
+     }
+     .main-inner {
+         background: rgba(255, 255, 255, 0.2);
+     }
+
+     .site-brand-container
+     {
+     	background: #222222;
+     }
+
+     // 代码区背景
+     .table-container{
+       background: rgba(240, 240, 222, 0.2);
+     }
+     .table-container :hover {
+       background: rgba(237,237, 225, 0.03);
+     }
+     // 代码背景
+     table > tbody > tr:nth-of-type(odd) {
+       background-color: rgba(255, 255, 255, 0.0);
+     }
+     table > tbody > tr:hover {
+       background-color: rgba(233,230, 230, 0.0);
+     }
+     pre,
+     .highlight {
+       background: rgba(200, 31, 33, 0);
+     }
+     //代码行标背景
+     .highlight .gutter pre {
+       background: rgbargba(227, 235, 227, 0.3);
+     }
+
+     .highlight .code pre {
+       background: rgba(29, 31, 100, 0);
+     }
+
+     // 评论
+     .comments {
+       background: rgba(255, 255, 255, 0.2);
+     }
+
+     // 文章页内作者信息
+     .post-copyright {
+       border-left: 3px solid #DfA710;
+       background: rgba(255, 255, 255, 0.3);
+     }
+
+     /* 行内代码块的自定义样式 */
+     code {
+         color: #FFFFFF;
+         background: rgba(239, 183, 48, 0.4);
+         margin: 2px;
+         border: 0px solid #DfA710;
+     }
+
+     // 底部动态的叶子图标
+     //.with-love{
+     //	color: red;
+     //}
+
+     // 去掉文章白色背景
+     .main-inner {
+       background: rgba(255,255,255,0.0);
+     }
+
+     // 标签页链接下划线颜色
+     a,
+     span.exturl {
+       border-bottom: 1px solid #DfA710;
+     }
+
+     // 标签页链接鼠标悬浮颜色
+     .tag-cloud a:hover {
+       color: #DfA710 !important;
+     }
+   ```
    
 
 ### 高级优化：
