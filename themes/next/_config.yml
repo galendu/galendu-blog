@@ -247,7 +247,7 @@ excerpt_description: true
 read_more_btn: false
 
 auto_excerpt:
-  enable: false
+  enable: true
   length: 100
 
 excerpt:
