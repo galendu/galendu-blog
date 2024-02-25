@@ -4,15 +4,23 @@ tags: hexo
 abbrlink: 5592
 date: 2024-01-29 13:41:24
 # description: hexo 简单操作方式
+categories:
+- 服务
+- hexo
+toc: true
+# cover: /img/vector_landscape_1.svg
 ---
+
+>通过git更新博客并对next主题进行优化配置  
+
+<!--more-->
+
 ## git  
 ### 将源码更新到github,并部署到个人博客  
 
 ```bash
 git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 ```
-
-<!--more-->
 
 ## hexo  
 
@@ -444,3 +452,49 @@ git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 ### 具体操作：
 
 请参考每个插件和 Next 主题提供的文档进行配置。设置都在博客根目录下的 `_config.yml` 以及 Next 主题的 `_config.yml` 中完成。 
+
+### post页面操作  
+1. **自定义页面布局**  
+```md
+---
+title: test-1
+toc: true
+widgets:
+  - type: profile
+    position: left
+    author: Galen Du
+    # Author title
+    author_title: 日日行，不怕千万里；常常做，不怕千万事。
+    # Author's current location
+    location: Gansu
+    # URL or path to the avatar image
+    avatar: /img/galendu-blog.png
+    # Whether show the rounded avatar image
+    avatar_rounded: true
+    # Email address for the Gravatar
+    gravatar: 
+    # URL or path for the follow button
+    follow_link: https://github.com/galendu
+  - type: toc
+    position: left
+  - type: categories
+    position: left
+  - type: tags
+    position: left
+
+date: 2024-02-25 22:09:32
+tags:
+categories:
+cover:
+thumbnail:
+---
+
+## 概述
+
+> 本文。
+
+<!--more-->
+
+## 正文
+
+```
