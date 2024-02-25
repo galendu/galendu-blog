@@ -433,6 +433,6 @@ providers:
     # fontcdn: google
     # # Name or URL of the fontawesome icon font CDN provider
     # iconcdn: fontawesome
-    cdn: 'https://some.cdn.domain.name/${package}/${version}/${filename}'
-    fontcdn: 'https://some.google.font.mirror/${type}?family=${fontname}'
-    iconcdn: 'https://custom.fontawesome.mirror/some.stylesheet.css'
+    cdn: loli
+    fontcdn: loli
+    iconcdn: loli
