@@ -428,8 +428,11 @@ plugins:
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
     # Name or URL template of the JavaScript and/or stylesheet CDN provider
-    cdn: jsdelivr
-    # Name or URL template of the webfont CDN provider
-    fontcdn: google
-    # Name or URL of the fontawesome icon font CDN provider
-    iconcdn: fontawesome
+    # cdn: jsdelivr
+    # # Name or URL template of the webfont CDN provider
+    # fontcdn: google
+    # # Name or URL of the fontawesome icon font CDN provider
+    # iconcdn: fontawesome
+    cdn: 'https://some.cdn.domain.name/${package}/${version}/${filename}'
+    fontcdn: 'https://some.google.font.mirror/${type}?family=${fontname}'
+    iconcdn: 'https://custom.fontawesome.mirror/some.stylesheet.css'
