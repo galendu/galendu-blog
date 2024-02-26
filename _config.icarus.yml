@@ -132,9 +132,9 @@ footer:
         Discuss on GitHub:
             icon: fas fa-comments
             url: https://github.com/galendu/galendu-blog/discussions
-        Attribution-NonCommercial-NoDerivs 4.0 International:
-            icon: fab fa-creative-commons-nc
-            url: https://creativecommons.org/licenses/by-nc-nd/4.0/
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons
+            url: https://creativecommons.org/licenses/by/4.0/
             
         Download on GitHub:
             icon: fab fa-github
