@@ -346,7 +346,7 @@ widgets:
         # Hint text under the email input
         description: 
         # Subscription form action URL
-        action_url: ''
+        action_url: 'https://api.follow.it/subscription-form/Wk9YZlYvaGQwR1RVVWxnN2RoNDVBOWVkWXkrRkJXL0tEZGFrMk1BVm03cUJTVGJWSFh4Nzh5bjcwZVA5d3ljVGxJcFZicE1zdXYzV3ZlQUdieVd4Y25oQ0w4SnV4bzYvU1Bjb1pLcERUdlJLaDJ1R3R3OVFMb1dPeEZqbjRkTVp8QWgvcFpncGtqOFYrUVRwL29EOUVYYTBpK0dod2dUSDZqcnVCWk9STnh4MD0=/8'
         # Feed claiming verification code
         verification_code: ''
 # Plugin configurations
