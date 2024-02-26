@@ -21,8 +21,8 @@ abbrlink: 42688
 date: 2024-02-25 22:09:32
 tags:
 categories:
-cover:
-thumbnail:
+cover: /img/vector_landscape_1.svg
+thumbnail: /img/vector_landscape_1.svg
 ---
 
 ## 概述
