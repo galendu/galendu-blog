@@ -3,7 +3,7 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/galendu-blog.png.gif
+logo: /img/favicon-16x16-galendu.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
@@ -29,7 +29,7 @@ head:
         icons:
             -
                 # The path to the image file
-                src: '/img/galendu-blog.png.gif'
+                src: '/img/favicon-16x16-galendu.png'
                 # A string containing space-separated image dimensions
                 sizes: '50px'
                 # A hint as to the media type of the image
