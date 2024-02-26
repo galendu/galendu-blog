@@ -123,7 +123,7 @@ navbar:
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: 用💖发电 © 2024
+    copyright: ''
     # Links to be shown on the right of the footer section
     links:
         # Creative Commons:
