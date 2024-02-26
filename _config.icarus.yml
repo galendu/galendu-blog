@@ -3,11 +3,11 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/favicon-16x16-galendu.png
+logo: /img/galendu-blog-png.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon-16x16-galendu.png
+    favicon: /img/galendu-blog.png.ico
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -29,7 +29,7 @@ head:
         icons:
             -
                 # The path to the image file
-                src: '/img/favicon-16x16-galendu.png'
+                src: '/img/galendu-blog.png.gif'
                 # A string containing space-separated image dimensions
                 sizes: '50px'
                 # A hint as to the media type of the image
@@ -250,7 +250,7 @@ widgets:
         # Author's current location
         location: Gansu
         # URL or path to the avatar image
-        avatar: /img/galendu-blog.png.gif
+        avatar: /img/galendu-blog-png.png
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
