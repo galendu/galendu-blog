@@ -1,5 +1,5 @@
 ---
-title: test-1
+title: test
 toc: true
 widgets:
   - type: profile
@@ -23,12 +23,17 @@ tags:
 categories:
 cover: /img/vector_landscape_1.svg
 thumbnail: /img/vector_landscape_1.svg
----
 
+---
 ## 概述
 
-> 本文。
+> 测试文档。
 
 <!--more-->
 
+
 ## 正文
+
+<figure class="image is-16by9">
+  <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
+</figure>
