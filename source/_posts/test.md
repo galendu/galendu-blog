@@ -21,8 +21,11 @@ abbrlink: 42688
 date: 2024-02-25 22:09:32
 tags:
 categories:
-cover: /img/vector_landscape_1.svg
-thumbnail: /img/vector_landscape_1.svg
+- test
+- hexo
+- icarus
+# cover: /img/vector_landscape_1.svg
+# thumbnail: /img/vector_landscape_1.svg
 
 ---
 ## 概述
@@ -32,8 +35,152 @@ thumbnail: /img/vector_landscape_1.svg
 <!--more-->
 
 
-## 正文
+## 文档编写
+### 自定义Hexo标签插件  
+>https://ppoffice.github.io/hexo-theme-icarus/uncategorized/%E8%87%AA%E5%AE%9A%E4%B9%89hexo%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6/#tab_icon_1  
 
+
+#### 消息  
+```md
+{% message color:<颜色> size:<大小> icon:<图标> title:<标题> %}
+    <内容>
+{% endmessage %}
+```
+
+#### 标签页  
+- 参数释义  
+```md
+{% tabs size:<大小> align:<对齐> style:<样式> %}
+<!-- tab id:<标签ID> icon:<图标> title:<标签标题> active -->
+<标签内容>
+<!-- endtab -->
+<!-- tab id:<标签ID> icon:<图标> title:<标签标题> -->
+<标签内容>
+<!-- endtab -->
+...
+{% endtabs %}
+```
+- 消息块1  
+{% message color:danger size:small %}
+    消息块
+{% endmessage %}
+```md
+{% message color:danger size:small %}
+    消息块1
+{% endmessage %}
+
+```
+- 消息块2
+{% message color:success size:medium icon:fa-brands fa-node-js title:消息 %}
+    消息块2。
+{% endmessage %}
+```md
+{% message color:success size:medium icon:fa-brands fa-node-js title:消息 %}
+    消息块2。
+{% endmessage %}
+
+```
+- 消息块3
+{% message color:info size:medium icon:fa-brands fa-node-js title:消息 %}
+    消息块3。
+{% endmessage %}
+```md
+{% message color:info size:medium icon:fa-brands fa-node-js title:消息 %}
+    消息块3。
+{% endmessage %}
+```
+#### 标签容器
+
+```md
+{% tabs align:left size:medium style:boxed  %}
+<!-- tab id:windows "icon:fa-brands fa-windows" title:windows active -->
+windows安装  
+<!-- endtab -->
+<!-- tab id:linux "icon:fa-brands fa-linux" title:linux -->
+linux安装  
+<!-- endtab -->  
+{% endtabs %}  
+```
+{% tabs align:left size:medium style:boxed  %}
+<!-- tab id:windows "icon:fa-brands fa-windows" title:windows active -->
+windows安装  
+<!-- endtab -->
+<!-- tab id:linux "icon:fa-brands fa-linux" title:linux -->
+linux安装  
+<!-- endtab -->  
+{% endtabs %}  
+
+
+### markdown编写  
+>https://markdown.com.cn/ 
+#### 标题语法  
+Heading level 1
+===============
+Heading level 2
+---------------  
+#### 强调语法  
+```md
+斜体***斜体***  
+粗体**粗体**  
+```
+斜体***斜体***  
+粗体**粗体**  
+
+#### 引用语法  
+```md
+>引用语法
+>
+>换行
+```
+>引用语法
+>
+>换行
+
+#### 嵌套引用  
+```md
+>引用语法
+>
+>>嵌套块引用
+```
+>引用语法
+>
+>>嵌套块引用  
+#### 带有其它元素的块引用  
+```md
+>引用语法
+>
+>>嵌套块引用
+> - 块引用1
+> - 块引用2
+```
+>引用语法
+>
+>>嵌套块引用
+> - 块引用1
+> - 块引用2  
+
+#### 插入链接  
+这是一个链接 [Markdown语法](https://markdown.com.cn)。
+```md
+这是一个链接 [Markdown语法](https://markdown.com.cn)。
+```
+
+#### 插入图片  
+```md
+![这是本地图片](/img/philly-magic-garden.jpg "Magic Gardens")
+```
+![这是本地图片](/img/philly-magic-garden.jpg "Magic Gardens")  
+
+```md
+[![在线图片]("Shiprock")](https://galendu.github.io/img/philly-magic-garden.jpg)
+```
+[![在线图片]("Shiprock")](https://galendu.github.io/img/philly-magic-garden.jpg)   
+
+
+
+
+#### 插入视频    
 <figure class="image is-16by9">
   <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" allowfullscreen></iframe>
 </figure>
+
