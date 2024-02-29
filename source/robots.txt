@@ -5,7 +5,7 @@
   Disallow: /archives/
   Disallow: /categories/
   Disallow: /tags/
-  Disallow: /photo/
+  Disallow: /img/
 
   Disallow: /vendors/
   Disallow: /js/

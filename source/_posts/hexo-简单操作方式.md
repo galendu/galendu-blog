@@ -25,7 +25,9 @@ git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
 ## hexo  
 
 ### hexo操作命令  
-- 创建新帖子或新页面`hexo new [layout] [title]` post是默认的layout,可以通过编辑_config.yaml中的default_layout修改  
+- 创建新帖子或新页面`hexo new [layout] [title]` post是默认的layout,可以通过编辑_config.yaml中的default_layout修改
+- 创建文章草稿`hexo new draft xxx`  
+- 将草稿发布为正式文章`hexo P xxx`  
 - 本地启动部署`hexo clean && hexo g && hexo s`  
 - 远程部署更新`hexo d -g`  
 - 通过git上传到github,并自动更新到站点(通过github action实现)`git add . && git commit -m "xxx" && git push`  
