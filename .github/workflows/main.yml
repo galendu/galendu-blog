@@ -1,5 +1,5 @@
 # 工作流的名称
-name: Hexo Blog CI
+name: Hexo Blog CI/CD
 
 # 指定触发的条件，这里是打标签才触发该工作流，你也可以改成 on: push，只要提交代码就触发
 on:
