@@ -1,15 +1,24 @@
 ---
 title: 善用chatgpt
+tags:
+  - ChatGPT
+  - AI
+categories:
+  - 工具
 toc: true
 date: 2024-02-29 20:14:37
-tags:
-- ChatGPT
-- AI
-categories:
-- 工具
 cover:
 thumbnail:
 ---
+
+## 概述
+
+> 本文。
+
+<!--more-->
+
+## 正文
+
 
 ## 概述
 
