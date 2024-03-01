@@ -252,7 +252,7 @@ widgets:
       # Whether show the rounded avatar image
       avatar_rounded: true
       # Email address for the Gravatar
-      gravatar:
+      gravatar: mailto:galendu@foxmail.com
       # URL or path for the follow button
       follow_link: https://github.com/galendu
       # Links to be shown on the bottom of the profile widget
