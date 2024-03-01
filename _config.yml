@@ -107,7 +107,7 @@ deploy:
   type: "git"
   # repo: https://github.com/galendu/galendu.github.io.git
   repo: git@github.com:galendu/galendu.github.io.git
-  branch: main
+  # branch: main
 
 # 启用压缩插件
 neat_enable: true
