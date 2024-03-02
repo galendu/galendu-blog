@@ -9,9 +9,10 @@ npm config set registry https://registry.npmmirror.com
 npm  install -g hexo-cli
 hexo init galendu-blog
 cd galendu-blog
-npm install hexo-theme-next
+# npm install hexo-theme-next
+npm install -S hexo-theme-icarus hexo-renderer-inferno
 npm install hexo-deployer-git --save
-# 配置theme为next
+# 配置theme为icarus
 hexo clean && hexo g && hexo s
 hexo d -g
 # ssh-keygen -f github-deploy-keyapt
