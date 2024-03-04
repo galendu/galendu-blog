@@ -25,6 +25,7 @@ jobs:
     # 安装 Hexo 的依赖库
     - name: Setup Hexo Dependencies
       run: |
+        rm -rf package.json package-lock.json
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
         #next主题优化依赖
