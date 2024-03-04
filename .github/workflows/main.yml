@@ -25,17 +25,13 @@ jobs:
     # 安装 Hexo 的依赖库
     - name: Setup Hexo Dependencies
       run: |
-        npm config set proxy null
-        npm cache clean --force
         npm install hexo-cli -g
         npm install hexo-deployer-git --save
         #next主题优化依赖
         # npm install hexo-neat --save
         #icarus主题安装
-        npm install -S hexo-theme-icarus hexo-renderer-inferno
-        # npm install hexo-image-minifier --save
-        # npm install hexo-seo-autopush --save
-        # npm install hexo-pwa --save
+        # npm install -S hexo-theme-icarus 
+        npm install hexo-renderer-inferno
         npm install hexo-generator-sitemap hexo-generator-feed --save
         npm install hexo-generator-searchdb
         npm install
