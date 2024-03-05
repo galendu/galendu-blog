@@ -17,5 +17,8 @@ hexo clean && hexo g && hexo s
 hexo d -g
 # ssh-keygen -f github-deploy-keyapt
 git add . && git commit -m `date  '+%Y%m%d%H%M'` && git push
+<<<<<<< HEAD
 git reset --hard commitid
+=======
+>>>>>>> e35b266817e6d9ac5ec60ecd4fe3860df4c5950a
 ```
