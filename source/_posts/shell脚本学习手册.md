@@ -44,27 +44,3 @@ $1-$n|shell脚本传入的第n个参数
 ## 7.sed  
 
 
-
-
-
-
-<nav class="nav">
-  <!-- 導覽列容器 -->
-  <div class="nav-left">
-    <!-- 對齊方式：置左 -->
-    <a href="" clas="nav-item"
-      ><!-- 元素 -->
-      <h1 class="title is-4">Askie Lin</h1>
-      <!-- 標題 -->
-    </a>
-  </div>
-  <div class="nav-right nav-menu">
-    <!-- 對齊方式：置右，是一個選單 -->
-    <a href="" clas="nav-item">A</a
-    ><!-- 元素 -->
-    <a href="" clas="nav-item">B</a
-    ><!-- 元素 -->
-    <a href="" clas="nav-item">C</a
-    ><!-- 元素 -->
-  </div>
-</nav>
