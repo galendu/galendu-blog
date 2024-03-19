@@ -11,6 +11,7 @@ hexo init galendu-blog
 cd galendu-blog
 # npm install hexo-theme-next
 npm install -S hexo-theme-icarus hexo-renderer-inferno
+npm install hexo-abbrlink --save
 npm install hexo-deployer-git --save
 # 配置theme为icarus
 hexo clean && hexo g && hexo s

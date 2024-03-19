@@ -1,11 +1,12 @@
 ---
 title: 2024年您应该了解的13个Kubernetes工具
 toc: true
-date: 2024-03-04 12:51:40
 tags: kubernetes
 categories:
-- 云原生
-- kubernetes
+  - 云原生
+  - kubernetes
+abbrlink: 45059
+date: 2024-03-04 12:51:40
 cover:
 thumbnail:
 ---

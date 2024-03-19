@@ -1,0 +1,7 @@
+{
+    "markdown.copyFiles.destination": {
+        "**/*": "../img/"
+    },
+    "pasteImageToMarkdown.path": "../img",
+    "pasteImageToMarkdown.insertPattern": "${imageSyntaxPrefix}${imageFilePath}${imageSyntaxSuffix}"
+}

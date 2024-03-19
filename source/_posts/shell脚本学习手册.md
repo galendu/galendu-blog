@@ -1,11 +1,12 @@
 ---
 title: shell脚本学习手册
 toc: true
-date: 2024-03-16 21:41:06
 tags: shell
-categories: 
-- linux
-- shell
+categories:
+  - linux
+  - shell
+abbrlink: 38836
+date: 2024-03-16 21:41:06
 cover:
 thumbnail:
 ---
