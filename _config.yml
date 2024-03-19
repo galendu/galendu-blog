@@ -139,8 +139,8 @@ search:
 
 sitemap:
   path: sitemap.xml
-  tag: false
-  category: false
+  tag: true
+  category: true
 
 feed:
   enable: true
