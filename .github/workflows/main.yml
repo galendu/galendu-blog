@@ -4,61 +4,58 @@ name: Hexo Blog CI/CD
 # 指定触发的条件，这里是打标签才触发该工作流，你也可以改成 on: push，只要提交代码就触发
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
-  build: 
-    runs-on: ubuntu-latest 
-        
+  build:
+    runs-on: ubuntu-latest
+
     steps:
-    
-    # 检查工作流是否可以访问 actions
-    - name: Checkout Repository master branch
-      uses: actions/checkout@master 
-      
-    # 安装 NodeJs
-    - name: Setup Node.js 21.x 
-      uses: actions/setup-node@master
-      with:
-        node-version: "21.x"
-    
-    # 安装 Hexo 的依赖库
-    - name: Setup Hexo Dependencies
-      run: |
-        npm install hexo-cli -g
-        npm install hexo-deployer-git --save
-        npm install hexo-abbrlink --save
-        #next主题优化依赖
-        # npm install hexo-neat --save
-        #icarus主题安装
-        npm install -S hexo-theme-icarus  hexo-renderer-inferno
-        npm install hexo-generator-sitemap hexo-generator-feed --save
-        npm install hexo-generator-searchdb
-        npm install
-    
-    # 设置 Hexo 部署的私钥
-    - name: Setup Deploy Private Key
-      env:
-        HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
-      run: |
-        mkdir -p ~/.ssh/
-        echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-    
-    # 设置 Git 信息
-    - name: Setup Git Infomation
-      run: | 
-        git config --global user.name galendu 
-        git config --global user.email 1610469455@qq.com
-    # 生成静态文件
-    - name: Generate static files 
-      run: |
-        hexo clean
-        hexo g
-    # 部署静态文件到 galendu.github.io
-    - name: Deploy static files to galendu.github.io
-      run: |
-        # cp googleee2c90ec88ce191f.html public/
-        # cp BingSiteAuth.xml public/
-        hexo d
+      # 检查工作流是否可以访问 actions
+      - name: Checkout Repository master branch
+        uses: actions/checkout@master
+
+      # 安装 NodeJs
+      - name: Setup Node.js 21.x
+        uses: actions/setup-node@master
+        with:
+          node-version: "21.x"
+
+      # 安装 Hexo 的依赖库
+      - name: Setup Hexo Dependencies
+        run: |
+          npm install hexo-cli -g
+          npm install hexo-deployer-git --save
+          npm install hexo-abbrlink --save
+          #next主题优化依赖
+          # npm install hexo-neat --save
+          #icarus主题安装
+          npm install -S hexo-theme-icarus  hexo-renderer-inferno
+          npm install hexo-generator-sitemap hexo-generator-feed --save
+          npm install hexo-generator-searchdb
+          npm install
+
+      # 设置 Hexo 部署的私钥
+      - name: Setup Deploy Private Key
+        env:
+          HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      # 设置 Git 信息
+      - name: Setup Git Infomation
+        run: |
+          git config --global user.name galendu 
+          git config --global user.email 1610469455@qq.com
+      # 生成静态文件
+      - name: Generate static files
+        run: |
+          hexo clean
+          hexo g
+      # 部署静态文件到 galendu.github.io
+      - name: Deploy static files to galendu.github.io
+        run: |
+          hexo d
