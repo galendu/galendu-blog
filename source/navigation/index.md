@@ -45,7 +45,7 @@ widgets:
         var password = document.getElementById("password").value;
         // 这里可以自定义你的密码验证逻辑
         if (password === "MyPassword") {
-window.location.href = "51.html";
+window.location.href = "14qBrMavy2pW9umzuhd7eMDVpwQ62xRtPK.html";
             // document.getElementById("message").innerHTML = "Password is correct!";
         } else {
             document.getElementById("message").innerHTML = "Incorrect password. Please try again.";
