@@ -3,6 +3,7 @@ title: 导航
 date: 2024-02-26 22:28:41
 type: "navigation"
 toc: true
+widgets:
 ---
 <!-- <div>
   <a button  class="button is-primary" href="https://github.com/timqian/chinese-independent-blogs">chinese-independent-blogs</button>
@@ -11,10 +12,45 @@ toc: true
 </div> -->
 
 
-<div class="custom-navigation">
-  <a  href="https://github.com/timqian/chinese-independent-blogs" class="nav-link button is-primary " name="中文独立博客列表">中文独立博客列表</a>
-<a  href="https://fontawesomeicons.com/" class="nav-link button is-primary " name="Icon 图标">Icon 图标</a>
-<a  href="https://bulma.io/" class="nav-link button is-primary " name="bulma">创建网站</a>
-<a href="http://docs.idevops.site/" class="nav-link button is-primary " name="bulma">DevOps运维笔记</a>
-  <!-- 添加更多链接 -->
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Verification</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    input[type="password"] {
+        padding: 10px;
+        margin: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h2>Password Verification</h2>
+<input type="password" id="password" placeholder="Enter password">
+<button onclick="verifyPassword()">Verify Password</button>
+<p id="message"></p>
+
+<script>
+    function verifyPassword() {
+        var password = document.getElementById("password").value;
+        // 这里可以自定义你的密码验证逻辑
+        if (password === "MyPassword") {
+window.location.href = "51.html";
+            // document.getElementById("message").innerHTML = "Password is correct!";
+        } else {
+            document.getElementById("message").innerHTML = "Incorrect password. Please try again.";
+        }
+    }
+</script>
+</body>
+</html>
