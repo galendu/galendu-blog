@@ -143,9 +143,15 @@ article {
 
 aside {
     flex: 1;
-    margin-left: 10px;
+    margin-left:10px;
     background-color: #66ccff;
+
+    position: static;
+
 }
+
+
+
 
 aside li {
     padding-bottom: 10px;

@@ -6,6 +6,7 @@ layout: false
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>galendu blog</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet" />
@@ -62,7 +63,7 @@ layout: false
             第一段内容
         </p>
         <hr />
-        <p>
+        <p has-text-white>
             第二段内容
         </p>
     </article>
@@ -72,22 +73,34 @@ layout: false
     <aside>
         <!-- 侧边栏在主内容右侧 -->
         <h2>相关链接</h2>
-        <ul>
-            <li><a href="#">这是一个超链接</a></li>
-            <li><a href="#">这是一个超链接</a></li>
-            <li><a href="#">这是一个超链接</a></li>
-            <li><a href="#">这是一个超链接</a></li>
-            <!-- 侧边栏有 n 个超链接，略略略…… -->
-        </ul>
+        <div class="content is-big">
+            <ul>
+                <li><a href="#">这是一个超链接</a></li>
+                <li><a href="#">这是一个超链接</a></li>
+                <li><a href="#">这是一个超链接</a></li>
+                <li><a href="#">这是一个超链接</a></li>
+                <!-- 侧边栏有 n 个超链接，略略略…… -->
+            </ul>
+            <div class="container is-max-widescreen">
+                <div class="notification is-info">
+                    This container has a <code>max-width</code> of
+                    <code>$widescreen - $container-offset</code> on fullhd.
+                </div>
+            </div>
+        </div>
     </aside>
 
 
 </main>
 
 
-<footer>
-    <!-- 本站所有网页的统一页脚 -->
-    <p>© 2050 galendu blog保留所有权利</p>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Galendu Blog</strong> by <a href="https://github.com/galendu">Galen Du</a>
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 DEED</a>.
+        </p>
+    </div>
 </footer>
 </body>
 <script src="scripts/main.js"></script>
