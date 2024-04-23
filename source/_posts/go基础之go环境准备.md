@@ -1,6 +1,7 @@
 ---
 title: go基础之go环境准备
 toc: true
+abbrlink: '94914928'
 date: 2024-04-18 20:18:32
 tags:
 categories:
