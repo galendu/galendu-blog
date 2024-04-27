@@ -80,14 +80,20 @@ import (
 	"xxproject/pb"
 )
 
+// pb.UnimplementedMessageSenderServer结构体实现了MessageSenderServer接口
+// 通过嵌套的方式,我们自己定义的结构体也实现了MessageSenderServer接口
+// 实现后,我们就可以重写proto定义的rpc方法
+// 通过这种方式在rpc方法中写入我们的业务逻辑
 type MessageSenderServerImpl struct {
 	*pb.UnimplementedMessageSenderServer
 }
 
 func (MessageSenderServerImpl) Send(context context.Context, request *pb.MessageRequest) (*pb.MessageResponse, error) {
-	log.Println("receive message:", request.GetSaySomething())
+	//打印请求参数
+	log.Println("receive message:", request.SaySomething)
+	//处理响应
 	resp := &pb.MessageResponse{}
-	resp.ResponseSomething = "roger that!"
+	resp.ResponseSomething = "this is grpc server, roger that"
 	return resp, nil
 }
 ```
@@ -109,6 +115,7 @@ func main() {
 	srv := grpc.NewServer()
 	//注册服务
 	pb.RegisterMessageSenderServer(srv, serviceImpl.MessageSenderServerImpl{})
+	//启动服务
 	listener, err := net.Listen("tcp", ":8002")
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
@@ -134,6 +141,7 @@ import (
 )
 
 func main() {
+	//建立grpc连接
 	conn, err := grpc.Dial("127.0.0.1:8002", grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)
