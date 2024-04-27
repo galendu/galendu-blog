@@ -43,7 +43,7 @@ protoc-gen-go --version
 ```proto
 syntax = "proto3"
 // 定义生成的go文件存储在那个目录那个包中,../pb代表在当前目录的上一级pb目录中生成,
-//pb代表了生成的go文件的包名是message
+//pb代表了生成的go文件的包名是pb
 option go_package = "../pb;pb";
 // 顶一个一个service,称为MessageSender,这个服务有一个rpc方法,名为Send。
 // 这个方法会发送一个MessageRequest,然后返回一个MessageResponse
