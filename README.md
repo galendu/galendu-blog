@@ -13,6 +13,7 @@ cd galendu-blog
 npm install -S hexo-theme-icarus hexo-renderer-inferno
 npm install hexo-abbrlink --save
 npm install hexo-deployer-git --save
+# npm install hexo-renderer-gitbook --save
 # 配置theme为icarus
 hexo clean && hexo g && hexo s
 hexo d -g
