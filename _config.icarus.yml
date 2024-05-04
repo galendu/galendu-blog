@@ -440,7 +440,6 @@ providers:
 comment:
   type: utterances
   repo: galendu/galendu-blog-comment
-#  issue_term: pathname        # 必填项，与issue_number二选一填写
+  issue-term: comment
   issue_number: 1           # 必填项，与issue_term二选一填写，每篇文章对应一个issue，填写前需要手动创建issue
-  label: galendu-blog     # 可选填
   theme: github-light         # 可选填
