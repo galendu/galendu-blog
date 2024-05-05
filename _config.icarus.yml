@@ -174,10 +174,10 @@ search:
     index_pages: true
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-#comment:
-#    type: disqus
-#    # Disqus shortname
-#    shortname: "galendu"
+comment:
+    type: disqus
+    # Disqus shortname
+    shortname: "galendu"
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -437,9 +437,9 @@ providers:
     fontcdn: loli
     iconcdn: loli
 
-comment:
-  type: utterances
-  repo: galendu/galendu-blog-comment
-  issue-term: comment
-  issue_number: 1           # 必填项，与issue_term二选一填写，每篇文章对应一个issue，填写前需要手动创建issue
-  theme: github-light         # 可选填
+#comment:
+#  type: utterances
+#  repo: galendu/galendu-blog-comment
+##  issue-term: comment
+#  issue_number: 1           # 必填项，与issue_term二选一填写，每篇文章对应一个issue，填写前需要手动创建issue
+#  theme: github-light         # 可选填
