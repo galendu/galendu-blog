@@ -42,6 +42,50 @@ $1-$n|shell脚本传入的第n个参数
 ## 4.shell正则表达式  
 ## 5.grep  
 ## 6.awk  
+>推荐书籍：《The AWK Programming Language》 by Alfred V. Aho, Brian W. Kernighan, Peter J. Weinberger。  
+>在线教程：[AWK Tutorial](https://www.grymoire.com/Unix/Awk.html)。  
+### 案例一 
+将a.txt中的数据处理为b.txt中的形式  
+a.txt  
+```text
+列1  列2  列3
+x1   a1    xy1
+x2   a2    xy1
+x3   a2    xy2
+x4   a1    xy2
+x5   a2    xy3
+x6   a1    xy3
+```  
+b.txt  
+```text
+列3	a1	a2
+xy1	x1	x2
+xy2	x4	x3
+xy3	x6	x5
+```
+
+```bash
+awk '
+BEGIN { # BEGIN 块中的代码在处理任何输入行之前执行一次。
+    FS = "[ \t]+";  # 设置输入字段分隔符为空格或制表符
+    OFS = "\t";     # 设置输出字段分隔符为制表符
+    print "列3", "a1", "a2";  # 输出文件头
+}
+NR > 1 { # 处理每一行输入时执行，但跳过第一行（通常是表头行）。
+    key = $3;  # 以第三列的值作为键
+    if ($2 == "a1") {
+        data[key]["a1"] = $1;  # 如果第二列为 a1，存入对应键的 a1 子段
+    } else if ($2 == "a2") {
+        data[key]["a2"] = $1;  # 如果第二列为 a2，存入对应键的 a2 子段
+    }
+}
+END { # END 块中的代码在处理完所有输入行之后执行一次。
+    for (key in data) {
+        print key, data[key]["a1"], data[key]["a2"];  # 遍历 data 数组中的每一个键，并打印键值和对应的 a1 和 a2 子段值。
+    }
+}
+' a.txt > b.txt
+```
 ## 7.sed  
 
 
