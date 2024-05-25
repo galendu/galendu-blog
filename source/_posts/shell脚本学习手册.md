@@ -44,6 +44,7 @@ $1-$n|shell脚本传入的第n个参数
 ## 6.awk  
 >推荐书籍：《The AWK Programming Language》 by Alfred V. Aho, Brian W. Kernighan, Peter J. Weinberger。  
 >在线教程：[AWK Tutorial](https://www.grymoire.com/Unix/Awk.html)。  
+> https://cloud.tencent.com/developer/article/1159061  
 ### 案例一 
 将a.txt中的数据处理为b.txt中的形式  
 a.txt  
