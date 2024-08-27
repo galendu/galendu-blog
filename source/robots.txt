@@ -5,13 +5,13 @@
   Allow: /categories/
   Allow: /tags/
   
-  Disallow: /img/
+  Allow: /img/
 
-  Disallow: /vendors/
-  Disallow: /js/
-  Disallow: /css/
-  Disallow: /fonts/
-  Disallow: /vendors/
-  Disallow: /fancybox/
+  Allow: /vendors/
+  Allow: /js/
+  Allow: /css/
+  Allow: /fonts/
+  Allow: /vendors/
+  Allow: /fancybox/
 
   Sitemap: https://galendu.github.io/sitemap.xml
