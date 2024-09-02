@@ -12,7 +12,7 @@ thumbnail:
 
 ## 概述
 
-> terraform。
+> terraform学习。
 
 <!--more-->
 
@@ -20,6 +20,7 @@ thumbnail:
 
 >https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax
 
+### terraform之provisioner
 ```tf
 resource "aws_instance" "app_server" {
   count = var.instance_count
@@ -31,6 +32,10 @@ resource "aws_instance" "app_server" {
 
   tags = var.resource_tags
 
+  provisioner "file" {
+    source = "./conf/nginx.conf"
+    destination = "/etc/nginx/nginx.conf"
+  }
 
   # provisioner "file" {
   #   source      = "./conf/nginx.conf"
