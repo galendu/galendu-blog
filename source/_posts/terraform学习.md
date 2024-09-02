@@ -32,11 +32,6 @@ resource "aws_instance" "app_server" {
 
   tags = var.resource_tags
 
-  provisioner "file" {
-    source = "./conf/nginx.conf"
-    destination = "/etc/nginx/nginx.conf"
-  }
-
   # provisioner "file" {
   #   source      = "./conf/nginx.conf"
   #   destination = "/etc/nginx/nginx.conf"
@@ -50,11 +45,15 @@ resource "aws_instance" "app_server" {
   #   }
   # }
 
-  provisioner "remote-exec" {
-    inline = [
-      "sudo systemctl restart nginx",
-      "sudo ls /usr/share/nginx/html/",
-    ]
+  # provisioner "remote-exec" {
+  #   inline = [
+  #     "sudo systemctl restart nginx",
+  #     "sudo ls /usr/share/nginx/html/",
+  #   ]
+  # }
+
+  provisioner "local-exec" {
+   command = "ps -ef"
   }
 
 }
