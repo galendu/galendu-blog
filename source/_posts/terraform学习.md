@@ -59,3 +59,21 @@ resource "aws_instance" "app_server" {
 }
 
 ```
+
+### terraform之modules
+>https://developer.hashicorp.com/terraform/tutorials/modules  
+
+**示例代码** 
+
+```bash
+git clone https://github.com/hashicorp/learn-terraform-modules-create.git
+ 
+cd learn-terraform-modules-create
+
+terraform init
+terraform plan
+terraform apply
+aws s3 cp modules/aws-s3-static-website-bucket/www/ s3://$(terraform output -raw website_bucket_name)/ --recursive
+aws s3 rm s3://$(terraform output -raw website_bucket_name)/ --recursive
+terraform destroy
+```
