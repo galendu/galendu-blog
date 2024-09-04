@@ -12,7 +12,7 @@ thumbnail:
 ---
 
 
-## 1. 概述
+## 1 概述
 
 > terraform学习。
 
@@ -21,7 +21,7 @@ thumbnail:
 
 >https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax
 
-## 2. terraform 命令参考  
+## 2 terraform 命令参考  
 ```text
 命令       用途
 terraform version 查看 Terraform 版本
@@ -42,7 +42,7 @@ terraform fmt 格式化 Terraform 代码
 terraform validate 检查 Terraform 语法
 terraform console Terraform 控制台
 ```
-## 3.terraform使用  
+## 3 terraform使用  
 ### 3.1 编写Terraform配置  
 #### 3.1.1 alias的使用    
 - 多个 Azure 订阅管理: 如果你有多个 Azure 订阅，每个订阅可能有不同的资源组和资源，你可以通过不同的 alias 配置来管理它们
@@ -325,7 +325,7 @@ resource "azurerm_network_security_group" "example" {
 ```
 
 
-## 4. terraform之provisioner
+## 4 terraform之provisioner
 ```tf
 resource "aws_instance" "app_server" {
   count = var.instance_count
@@ -365,7 +365,7 @@ resource "aws_instance" "app_server" {
 
 ```
 
-### 5. terraform之modules
+### 5 terraform之modules
 >https://developer.hashicorp.com/terraform/tutorials/modules  
 
 **示例代码** 
