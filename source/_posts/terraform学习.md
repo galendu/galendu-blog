@@ -12,7 +12,7 @@ thumbnail:
 ---
 
 
-## 概述
+## 1. 概述
 
 > terraform学习。
 
@@ -21,7 +21,7 @@ thumbnail:
 
 >https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax
 
-## terraform 命令参考  
+## 2. terraform 命令参考  
 ```text
 命令       用途
 terraform version 查看 Terraform 版本
@@ -42,9 +42,9 @@ terraform fmt 格式化 Terraform 代码
 terraform validate 检查 Terraform 语法
 terraform console Terraform 控制台
 ```
-## 1.terraform使用  
-### 1.1 编写Terraform配置  
-#### 1.1.1 alias的使用    
+## 3.terraform使用  
+### 3.1 编写Terraform配置  
+#### 3.1.1 alias的使用    
 - 多个 Azure 订阅管理: 如果你有多个 Azure 订阅，每个订阅可能有不同的资源组和资源，你可以通过不同的 alias 配置来管理它们
 - 跨环境管理: 在开发、测试和生产环境中可能有不同的 Azure 订阅或账户，使用 alias 可以在同一个 Terraform 配置文件中管理这些环境的资源。    
 ```tf
@@ -82,7 +82,7 @@ resource "azurerm_resource_group" "rg2" {
   location = "westeurope"
 }
 ```
-#### 1.1.2 使用check来验证基础设施    
+#### 3.1.2 使用check来验证基础设施    
 
 ```tf
 check "response" {
@@ -98,7 +98,7 @@ check "response" {
   }
 }
 ```
-#### 1.1.3 depends_on的使用  
+#### 3.1.3 depends_on的使用  
 >https://developer.hashicorp.com/terraform/language/meta-arguments/depends_on  
 ```tf
 resource "azurerm_resource_group" "rg" {
@@ -117,7 +117,7 @@ resource "azurerm_virtual_network" "vnet" {
 }
 ```
 
-#### 1.1.4 函数upper的使用  
+#### 3.1.4 函数upper的使用  
 >函数upper的使用,将给定字符串中的所有大小写字母转换为大写  
 >更多函数的使用参考:https://developer.hashicorp.com/terraform/language/functions/chomp 
 ```tf
@@ -127,7 +127,7 @@ resource "azurerm_resource_group" "rg-app" {
   location = "westeurope"
 }
 ```
-#### 1.1.5 环境变量local块的使用  
+#### 3.1.5 环境变量local块的使用  
 **示例1**  
 ```tf
 resource "azurerm_public_ip" "pip" {
@@ -176,7 +176,7 @@ resource "azurerm_virtual_network" "vnet" {
 
 ```
 
-#### 1.1.6 output块的使用  
+#### 3.1.6 output块的使用  
 ```tf
 output "webapp_name" {
   description = "output Name of the webapp"
@@ -184,7 +184,7 @@ output "webapp_name" {
 }
 ```
 
-#### 1.1.7 随机数的使用
+#### 3.1.7 随机数的使用
 >https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password    
 ```tf
 resource "random_password" "password" {
@@ -222,7 +222,7 @@ resource "azurerm_resource_group" "rg-app" {
 }
 ```
 
-#### 1.1.8 terraform_remote_state的使用  
+#### 3.1.8 terraform_remote_state的使用  
 ```tf
 provider "azurerm" {
   skip_provider_registration = true # skip registration
@@ -241,7 +241,7 @@ data "terraform_remote_state" "service_plan_tfstate" {
 }
 ```
 
-#### 1.1.9 variables的使用 
+#### 3.1.9 variables的使用 
 
 ```tfvars
 # 定义的location变量要符合validation中的要求
@@ -259,7 +259,7 @@ variable "location" {
 }
 ```
 
-### 1.2 使用Terraform扩展基础设施  
+### 3.2 使用Terraform扩展基础设施  
 ```tf
 variable "nsg_rules" {
   description = "List of NSG rules"
@@ -325,7 +325,7 @@ resource "azurerm_network_security_group" "example" {
 ```
 
 
-### terraform之provisioner
+## 4. terraform之provisioner
 ```tf
 resource "aws_instance" "app_server" {
   count = var.instance_count
@@ -365,7 +365,7 @@ resource "aws_instance" "app_server" {
 
 ```
 
-### terraform之modules
+### 5. terraform之modules
 >https://developer.hashicorp.com/terraform/tutorials/modules  
 
 **示例代码** 
