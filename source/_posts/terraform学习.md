@@ -15,11 +15,9 @@ thumbnail:
 ## 1 概述
 
 > terraform学习。
+>https://developer.hashicorp.com/terraform/language
 
 <!--more-->
-
-
->https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax
 
 ## 2 terraform 命令参考  
 ```text
@@ -324,6 +322,19 @@ resource "azurerm_network_security_group" "example" {
 
 ```
 
+```tf
+# 1.count
+# 2.dynamics
+# 3.filter_array
+# 4.list_map
+# 5.map
+# 6.map_merge
+# 7.myApp
+
+
+```
+
+### 3.3 
 
 ## 4 terraform之provisioner
 ```tf
