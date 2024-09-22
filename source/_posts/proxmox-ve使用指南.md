@@ -103,3 +103,93 @@ qm start 24${id}
 done
 
 ```
+
+## 使用terraform操作proxmox-ve  
+
+**创建terraform用户**    
+```bash
+export PM_USER=terraform-prov@pve
+export PM_PASS=123456
+terraform-role=TerraformProv
+pveum role add ${terraform-role} -privs "Datastore.AllocateSpace Datastore.AllocateTemplate Datastore.Audit Pool.Allocate Sys.Audit Sys.Console Sys.Modify VM.Allocate VM.Audit VM.Clone VM.Config.CDROM VM.Config.Cloudinit VM.Config.CPU VM.Config.Disk VM.Config.HWType VM.Config.Memory VM.Config.Network VM.Config.Options VM.Migrate VM.Monitor VM.PowerMgmt SDN.Use"
+pveum user add ${PM_USER} --password ${PM_PASS}
+pveum aclmod / -user ${PM_USER} -role ${terraform-role}
+
+pveum role modify ${terraform-role} -privs "Datastore.AllocateSpace Datastore.AllocateTemplate Datastore.Audit Pool.Allocate Sys.Audit Sys.Console Sys.Modify VM.Allocate VM.Audit VM.Clone VM.Config.CDROM VM.Config.Cloudinit VM.Config.CPU VM.Config.Disk VM.Config.HWType VM.Config.Memory VM.Config.Network VM.Config.Options VM.Migrate VM.Monitor VM.PowerMgmt SDN.Use"
+```
+
+**provider配置**  
+
+```tf
+provider "proxmox" {
+  pm_api_url = "https://proxmox-server01.example.com:8006/api2/json"
+}
+```
+**terraform.tf**  
+```tf
+terraform {
+  required_version = ">= 1.1.0"
+  required_providers {
+    proxmox = {
+      source  = "telmate/proxmox"
+      version = "= 3.0.1-rc4"
+    }
+  }
+}
+```
+**main.tf文件定义创建虚拟机** 
+```tf
+provider "proxmox" {
+  pm_api_url = "https://127.0.0.1:18006/api2/json"
+}
+
+resource "proxmox_vm_qemu" "proxmox-ubuntu" {
+  count = var.instance_count
+  vmid  = "${var.id+count.index}"
+  name  = "ubuntu-${var.id+count.index}"
+  desc  = "Ubuntu develop environment"
+  # 节点名
+  target_node = "pve"
+
+  # cloud-init template
+  clone      = "VM 901"
+  full_clone = true
+
+  cores   = 4
+  sockets = 1
+  # 内存
+  memory = 4096
+  agent   = 1
+  os_type = "linux"
+  onboot  = true
+
+  network {
+    model  = "virtio" # 网络设备类型
+    bridge = "vmbr0"  # 桥接接口
+  }
+  ipconfig0 = "ip=${var.ips}.${var.id+count.index}/24,gw=${var.ips}.1"
+  ciuser     = "root"
+  cipassword = "123456"
+
+}
+
+
+variable "id" {
+  description = "虚拟机的 ID"
+  type        = number
+  default     = 101
+}
+
+variable "instance_count" {
+  type        = number
+  default     = 5
+  description = "description"
+}
+
+variable "ips" {
+  type        = string
+  default     = "192.168.3"
+  description = "description"
+}
+
+```
