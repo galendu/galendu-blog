@@ -86,23 +86,37 @@ resize2fs /dev/sda1
 apt update 
 # 安装 qemu-guest-agent
 apt install qemu-guest-agent -y
+apt install --reinstall qemu-guest-agent
 systemctl start qemu-guest-agent && systemctl enable qemu-guest-agent
-qm set 901 --ipconfig0 ip=192.168.3.91/24,gw=192.168.3.1
+qm set 901 --ipconfig0 ip=192.168.3.91/24,gw=192.168.3.2
 history -c && init 0
 qm template $VM_ID
 
 for id in $(seq 1 1 8)
 do
-qm clone 901 24${id} --name demo-vm24${id} -full true -storage local-lvm
+qm clone 1000 24${id} --name demo-vm24${id} -full true -storage local-lvm
 qm set 24${id} --sockets 2 --cores 2 --memory 4096
 qm set 24${id} --scsi1 iothread=1,local-lvm:100
 qm set 24${id} --ciuser root --cipassword 123456
-qm set 24${id} --ipconfig0 ip=192.168.3.24${id}/24,gw=192.168.3.1
+qm set 24${id} --ipconfig0 ip=192.168.3.24${id}/24,gw=192.168.3.2
 qm set 24${id} --nameserver 114.114.114.114 
 qm start 24${id}
 done
 
 ```
+
+```bash
+# https://blog.margrop.net/post/proxmox-ve-daily-maintain/
+# https://dev.to/asded_/deploying-your-kali-linux-templates-with-cloud-init-under-proxmox-ve-2ng7
+7z x kali-linux-2024.3-qemu-amd64.7z 
+   
+virt-customize -a kali-linux-2024.3-qemu-amd64.qcow2 --install cloud-init
+virt-customize -a kali-linux-2024.3-qemu-amd64.qcow2 --install qemu-guest-agent
+virt-customize -a kali-linux-2024.3-qemu-amd64.qcow2 --run-command 'systemctl enable ssh.service'
+
+qm importdisk 100 kali-linux-2024.3-qemu-amd64.qcow2 local-lvm  --format qcow2
+```
+
 
 ## 使用terraform操作proxmox-ve  
 
@@ -110,7 +124,7 @@ done
 ```bash
 export PM_USER=terraform-prov@pve
 export PM_PASS=123456
-terraform-role=TerraformProv
+terraform_role=TerraformProv
 pveum role add ${terraform-role} -privs "Datastore.AllocateSpace Datastore.AllocateTemplate Datastore.Audit Pool.Allocate Sys.Audit Sys.Console Sys.Modify VM.Allocate VM.Audit VM.Clone VM.Config.CDROM VM.Config.Cloudinit VM.Config.CPU VM.Config.Disk VM.Config.HWType VM.Config.Memory VM.Config.Network VM.Config.Options VM.Migrate VM.Monitor VM.PowerMgmt SDN.Use"
 pveum user add ${PM_USER} --password ${PM_PASS}
 pveum aclmod / -user ${PM_USER} -role ${terraform-role}

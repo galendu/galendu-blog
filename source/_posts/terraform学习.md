@@ -15,8 +15,10 @@ thumbnail:
 ## 1 概述
 
 > terraform学习。
+>语法查询
 >https://developer.hashicorp.com/terraform/language
-
+>provider地址
+>https://registry.terraform.io/browse/modules
 <!--more-->
 
 ## 2 terraform 命令参考  
@@ -329,8 +331,6 @@ resource "azurerm_network_security_group" "example" {
 # 4.list_map
 # 5.map
 # 6.map_merge
-# 7.myApp
-
 
 ```
 
@@ -393,3 +393,57 @@ aws s3 cp modules/aws-s3-static-website-bucket/www/ s3://$(terraform output -raw
 aws s3 rm s3://$(terraform output -raw website_bucket_name)/ --recursive
 terraform destroy
 ```
+
+## 5 terraform最佳实践  
+
+### 5.1 terraform调试方法
+
+- 配置调试日志  
+  ```txt
+  开启详细日志输出（环境变量 TF_LOG）
+  Terraform 使用环境变量 TF_LOG 来控制日志级别。你可以设置不同的日志级别来获得不同程度的调试信息。
+
+  日志级别：
+  TRACE：最高级别的日志，提供最详细的信息。
+  DEBUG：包含调试信息。
+  INFO：默认的日志级别，提供较少的详细信息。
+  WARN：仅记录警告信息。
+  ERROR：仅记录错误信息。
+  ```
+- 检查语法是否正确  
+`terraform validate`
+- 检查格式是否正确  
+`terraform fmt` 
+- 查看可视化依赖,生成依赖图   
+`terraform graph | dot -Tpng > graph.png` 
+- 交互式命令行  
+  ```txt
+  terraform console
+  > var.my_variable
+  > aws_instance.example
+  ```
+- 模块调试  
+  ```tf
+  # 1.在模块中定义输出
+  output "instance_id" {
+    value = aws_instance.example.id
+  }
+
+  # 2.在根模块中引用这个输出
+  module "my_module" {
+    source = "./module"
+  }
+
+  output "module_instance_id" {
+    value = module.my_module.instance_id
+  }
+  # terraform apply -autoapprove -target="moudle.my_module"
+  ```
+- terraform state 调试状态文件   
+`terraform state show aws_instance.example`  
+- terraform taint 标记资源重新创建  
+`terraform taint aws_instance.example` 
+- terraform refresh 刷新状态  
+`terraform refresh`  
+
+
