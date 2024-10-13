@@ -18,6 +18,6 @@ npm install hexo-deployer-git --save
 hexo clean && hexo g && hexo s
 hexo d -g
 # ssh-keygen -f github-deploy-keyapt
-hexo clean && hexo g && git add . && git commit -m "`date  '+%Y%m%d%H%M' 更新xxx"` && git push
+hexo clean && hexo g && git add . && git commit -m "`date  '+%Y%m%d%H%M'` 更新xxx" && git push
 # 回滚代码
 git reset --hard commitid
