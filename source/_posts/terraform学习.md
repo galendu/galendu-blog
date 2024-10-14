@@ -14,11 +14,12 @@ thumbnail:
 
 ## 1 概述
 
-> terraform学习。
+> terraform学习。  
 >语法查询
->https://developer.hashicorp.com/terraform/language
+>https://developer.hashicorp.com/terraform/language  
 >provider地址
->https://registry.terraform.io/browse/modules
+>https://registry.terraform.io/browse/modules  
+>最佳实践  https://www.cloudbolt.io/eguides/terraform-best-practices/  
 <!--more-->
 
 ## 2 terraform 命令参考  
