@@ -447,4 +447,56 @@ terraform destroy
 - terraform refresh 刷新状态  
 `terraform refresh`  
 
+### 5.2 alicloud配置 
+```bash
+# 配置aliyun到git 目录 /c/Program Files/Git/usr/bin/aliyun.exe
+# 配置阿里云ak/sk
+aliyun configure --profile AkProfile
+```
 
+### 5.3 通过terragrunt管理terraform  
+
+>https://github.com/gruntwork-io/terragrunt  
+>https://terragrunt.gruntwork.io/  
+
+
+#### 安装  
+```bash
+wget https://https://ghp.ci/https://github.com/gruntwork-io/terragrunt/releases/download/v0.68.4/terragrunt_windows_amd64.exe 
+
+#Windows: You can install Terragrunt on Windows using Chocolatey: 
+choco install terragrunt
+
+#macOS: You can install Terragrunt on macOS using Homebrew: 
+brew install terragrunt
+
+#FreeBSD: You can install Terragrunt on FreeBSD using Pkg: 
+pkg install terragrunt
+
+terragrunt --install-autocomplete
+```
+
+#### 使用  
+1. 生成依赖图  
+`terragrunt graph-dependencies | dot -Tsvg > graph.svg`  
+2. 限制并行数  `terragrunt run-all apply --terragrunt-parallelism 4`
+3. 保存输出`terragrunt run-all plan --terragrunt-out-dir /tmp/tfplan`
+4. 通过输出的文件进行部署`terragrunt run-all apply --terragrunt-out-dir /tmp/tfplan`
+5. 删除输出文件`terragrunt run-all plan -destroy --terragrunt-out-dir /tmp/tfplan`
+6. 输出二进制文件和json文件`terragrunt run-all plan --terragrunt-out-dir /tmp/all --terragrunt-json-out-dir /tmp/all`
+7. 常用命令  
+  ```bash
+  terragrunt run-all apply
+  terragrunt run-all destroy
+  terragrunt run-all output
+  terragrunt run-all plan
+  ```
+  
+
+ 
+## 6 terraform常见问题处理  
+### 6.1 lock锁
+`terraform force-unlock <ID>`
+
+### 6.2 for_each、appends_on、count不能使用   
+删除modules中的versions.tf的provider配置  
