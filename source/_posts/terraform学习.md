@@ -460,7 +460,7 @@ aliyun configure --profile AkProfile
 >https://terragrunt.gruntwork.io/  
 
 
-#### 安装  
+#### 5.3.1 安装  
 ```bash
 wget https://https://ghp.ci/https://github.com/gruntwork-io/terragrunt/releases/download/v0.68.4/terragrunt_windows_amd64.exe 
 
@@ -476,7 +476,7 @@ pkg install terragrunt
 terragrunt --install-autocomplete
 ```
 
-#### 使用  
+#### 5.3.2 使用  
 1. 生成依赖图  
 `terragrunt graph-dependencies | dot -Tsvg > graph.svg`  
 2. 限制并行数  `terragrunt run-all apply --terragrunt-parallelism 4`
