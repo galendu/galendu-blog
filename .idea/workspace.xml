@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1520006d-2fc1-41d8-93ab-e1375d924587" name="Changes" comment="" />
+    <list default="true" id="1520006d-2fc1-41d8-93ab-e1375d924587" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/source/_posts/.go基础之go环境准备_images/792264f7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/file/jetbra.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/385a3329.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/3d3e751e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/64a68d05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/ab72e5e6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/b50aad1f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/bbf37f3d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/d89ee06a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/f707a9a3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/go基础之go环境准备.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/go基础之go环境准备.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +27,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;galendu&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/galendu/galendu-blog.git&quot;,
+    &quot;accountId&quot;: &quot;bf084144-1767-4e85-a771-947539a41be2&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2fY3rpMcP92tCCZ6NvfHEMpJw1E" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,15 +60,23 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "F:/GoProject/src/golang15",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "C:/Users/Anchnet",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\工作\project\galendu-blog\source\file" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-33c477a475b1-b97fc8a1e17c-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.14494.238" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-GO-241.14494.238" />
+        <option value="bundled-gosdk-5df93f7ad4aa-df9ad98b711f-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-242.23339.24" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-GO-242.23339.24" />
       </set>
     </attachedChunks>
   </component>
