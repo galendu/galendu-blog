@@ -491,7 +491,13 @@ terragrunt --install-autocomplete
   terragrunt run-all output
   terragrunt run-all plan
   ```
-  
+#### 5.3.3 常用函数  
+
+```bash
+
+#获取当前目录的基本名称
+basename(get_terragrunt_dir())
+```
 
  
 ## 6 terraform常见问题处理  

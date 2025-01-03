@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1520006d-2fc1-41d8-93ab-e1375d924587" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/source/_posts/.go基础之go环境准备_images/792264f7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/file/jetbra.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/385a3329.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/3d3e751e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/64a68d05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/ab72e5e6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/b50aad1f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/bbf37f3d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/d89ee06a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/img/go基础之go环境准备_images/f707a9a3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/go基础之go环境准备.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/go基础之go环境准备.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/terraform学习.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/terraform学习.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +50,7 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "C:/Users/Anchnet",
+    "last_opened_file_path": "D:/工作/project/galendu-blog",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
