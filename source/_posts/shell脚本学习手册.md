@@ -90,3 +90,9 @@ END { # END 块中的代码在处理完所有输入行之后执行一次。
 ## 7.sed  
 
 
+## 8.sort、uniq、cut
+
+
+## 9.rsync  
+
+- -R 同步目录`rsync -R xx/a1/b.txt xx/a2/c.txt new/` 
